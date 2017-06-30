@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="lib/jquery-1.11.1.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        footer ul{
+            margin-bottom:0px;
+        }
+        footer{width: 100%;height:100px;background-color: black}
+        footer .left{
+            list-style: none;line-height: 100px;margin-left: 40px;
+        }
+        footer .left li{
+            float: left;
+
+        }
+
+        footer .left li a{color: #77797b;margin: 5px;font-size: 15px}
+        footer .left .li2 a{color:#ff4200 }
+        footer .right{
+            float: right;margin-right: 90px;line-height: 100px;}
+    </style>
+
+
+</head>
+<body>
+
+    <!--<nav class="navbar navbar-default" style="height: 72px; margin: 0px" >
+        <div class="container-fluid" style="height: 72px">
+
+                <div class="col-md-2">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" style="padding: 0px">
+                            <img alt="全民创造" src="image/qmcz.png" style="width: 140px;" >
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs" style="border-bottom:none">
+                        <li role="presentation" class="active"><a href="#" style="line-height: 50px">首页</a></li>
+                        <li role="presentation"><a href="#"  style="line-height: 50px;color:gray">节目专栏</a></li>
+                        <li role="presentation"><a href="#"  style="line-height: 50px;color:gray;border-right: 1px solid lightgray">圈子</a></li>
+
+                    </ul></div>
+                <div class="col-md-4">
+                    <div class="input-group " style="padding-top: 20px;
+margin-left: -90px;">
+                        <span class="input-group-addon glyphicon glyphicon-search" id="basic-addon1" aria-hidden="true"></span>
+                        <input type="text" class="form-control" placeholder="输入您想要搜索的内容" aria-describedby="basic-addon1">
+                    </div></div>
+                <div class="col-md-2" style="margin: 25px 40px;float: right;">
+
+                    <a href="#" style="font-size: 15px;color: #ff4200">登录</a><a href="#" style="margin-left: 20px;font-size: 15px;color: #ff4200">注册</a>
+                </div>
+
+        </div>
+    </nav>-->
+
+    <div id="header">
+        <div class="header w1200">
+            <div class="logo fl">
+                <img src="image/logo.png">
+            </div>
+            <ul class="nav fl">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">节目专栏</a></li>
+                <li><a href="#">圈子</a></li>
+            </ul>
+            <div class="headerline"></div>
+            <div class="header-search fl">
+                <img src="image/search.png">
+                <input type="text" placeholder="输入您想要搜索的内容">
+            </div>
+            <div class="login-res fr">
+                <a ui-sref="login">登陆</a>
+                <a ui-sref="register">注册</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div ui-view></div>
+
+
+
+
+<footer>
+    <ul class="left">
+        <li ><a href="#">关于全民创造</a>|</li>
+        <li class="li2"><a href="#">全民创造协议</a>|</li>
+        <li ><a href="#">全民创造风险提醒</a>|</li>
+        <li ><a href="#">联系我们</a></li>
+    </ul>
+    <div class="right">
+        <a href="#" style="padding: 0px">
+            <img src="image/qmczf.png" alt="全民创造" style="width: 140px;margin-top: -10px "  >
+        </a>©2017
+    </div>
+</footer>
+
+
+
+</body>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/all.min.js"></script>
+
+
+</html>

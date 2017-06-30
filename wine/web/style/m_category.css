@@ -1,0 +1,70 @@
+/* CSS Document */
+
+header{ width:100%; height:1.76rem; background:rgba(186,15,47,1); position:fixed; z-index:100; top:0;}
+header .p_txt{color:#fff; font-size:1rem; line-height:1.76rem; margin-left:45%}
+header .bo{ width:1.7rem; height:1.7rem; float:left; color:#fff; font-size:1.7rem; line-height:1.7rem;font-style:normal; margin-left:0.5rem}
+
+.content{max-width:15rem; min-width:6.4rem; width:95%; height:100%; background:rgba(255,255,255,1); margin:0 auto; overflow:hidden}
+
+.content .swiper-nav{ width:100%; height:auto; margin:0 auto;position: relative; overflow:hidden; margin-top:2.3rem}
+
+
+.swiper-nav .box{display: block; /*border:1px solid #d4d4d4;*/background: #fff;color: #515151;}
+.swiper-nav .box h2{font-size: 1.5em;color: #333; font-weight:400; margin-bottom:5%; margin-left:2%; margin-top:2%;}
+.swiper-nav .box .box-type{ width:100%;}
+.swiper-nav .box .box-type a{ display:block; text-decoration:none; color:#666; float:left; width:20%;}
+.swiper-nav .box .box-type a em{ width:2rem; height:2rem; margin:0 auto; display:block;background-image:url(../images/type.png); background-repeat:no-repeat; background-size:2rem}
+.swiper-nav .box .box-type a b{ display:block; text-align:center; font-weight:400; margin-bottom:10%; margin-top:5%;}
+
+.swiper-nav .box .box-type a.wine-2 em{ background-position:0 -4rem;}
+.swiper-nav .box .box-type a.wine-3 em{ background-position:0 -2rem;}
+.swiper-nav .box .box-type a.wine-4 em{ background-position:0 -6rem;}
+.swiper-nav .box .box-type a.wine-5 em{ background-position:0 -8rem;}
+
+
+
+.content .nav-position{ width:100%; height:auto; margin:0 auto;position: relative; overflow:hidden; margin-top:1.8rem;margin-bottom:2.3rem}
+.wine-tabs{ display:block; position:relative;    font-family: STXihei359;    box-sizing: border-box;}
+.wine-tabs ul{ width:25%; z-index:10; float:left;}
+.wine-tabs ul li{position: relative; margin-right: -1px;border-right: 1px solid #d5d5d5;display: block;background: #f2f2f2;    height: 1.8rem;font-size: 1.5em;line-height:1.8rem;border-bottom: 1px solid #d4d4d4;color: #666;text-align: center}
+.wine-tabs ul li.active{background: #fff;border-left: 3px solid #ba0e2f;border-right: 1px solid #fff;color: #ba0e2f}
+
+.wine-tabs .tabs-box{margin-left: 25%;padding: 0 2%;width: 75%; height:auto;background: #fff;border-left: 1px solid #d5d5d5;overflow-y: auto; display:none}
+.wine-tabs .tabs-box_on{ display:block}
+.wine-tabs .tabs-box a{ padding: 2% 0; display: block; font-size: 1.2em;line-height:1.2rem;border-bottom: 1px solid #d4d4d4;text-decoration: none;}
+.wine-tabs .tabs-box a h2{ color: #666;font-size: 1em;font-weight:normal;}
+.wine-tabs .tabs-box a span{color: #d5d5d5; font-size:0.6rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bot_nav{ width:100%; height:1.8rem;background: -webkit-linear-gradient(top,#f4f4f4,#e3e3e3); position:fixed; z-index:100; bottom:0;}
+.bot_nav li{ width:20%;float:left; height:1.8rem; position:relative;}
+.bot_nav li ._icon{position:absolute; top:0.2rem; left:50%; width:0.9rem; height:0.9rem; display:block; margin-left:-0.45rem}
+.bot_nav li .btn_text{ display:block; padding-top:1.1rem; text-align:center; coolor:#333; font-size:0.5rem}
+
+
+.bot_nav li .icon-1{background:url(../images/icon-1-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-2{background:url(../images/icon-2-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-3{background:url(../images/icon-3.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-4{background:url(../images/icon-4.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-5{background:url(../images/icon-5.png) no-repeat; background-size:0.9rem}
+
+

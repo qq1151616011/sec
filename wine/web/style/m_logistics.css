@@ -1,0 +1,32 @@
+/* CSS Document */
+
+header{ width:100%; height:1.76rem; background:rgba(186,15,47,1); position:relative; z-index:100; top:0;}
+header .p_txt{color:#fff; font-size:1rem; line-height:1.76rem; text-align:center;}
+
+
+
+.bar{ width:100%; height:1.56rem; border-bottom:1px solid #dadada; background:#f4f4f4; line-height:1.56rem}
+
+.bar .order-all{ display:block; position:relative;}
+
+.bar .order-all .date-button{ height:1.5rem; line-height:1.5rem; color:#F36400; font-size:0.6rem;}
+.bar .order-all .date-button i{ width:1rem; height:1rem; display:block; float:left; background:url(../images/hd1.png) no-repeat; background-size:1rem; margin:0.25rem}
+
+.bar .order-all .menuHead{ padding-right:0.5rem; color:#666;}
+
+#showM{ line-height:1.56rem; display:block; text-decoration:none; font-size:0.6rem; padding-left:0.4rem}
+#showM a{ color:rgb(0,51,204);}
+
+
+
+.bot_nav{ width:100%; height:1.8rem;background: -webkit-linear-gradient(top,#f4f4f4,#e3e3e3); position:fixed; z-index:100; bottom:0;}
+.bot_nav li{ width:20%;float:left; height:1.8rem; position:relative;}
+.bot_nav li ._icon{position:absolute; top:0.2rem; left:50%; width:0.9rem; height:0.9rem; display:block; margin-left:-0.45rem}
+.bot_nav li .btn_text{ display:block; padding-top:1.1rem; text-align:center; coolor:#333; font-size:0.5rem}
+
+
+.bot_nav li .icon-1{background:url(../images/icon-1-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-2{background:url(../images/icon-2.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-3{background:url(../images/icon-3-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-4{background:url(../images/icon-4.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-5{background:url(../images/icon-5.png) no-repeat; background-size:0.9rem}

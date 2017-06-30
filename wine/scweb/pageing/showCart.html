@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="红酒,葡萄酒,进口红酒,进口葡萄酒,法国红酒,红葡萄酒,干红葡萄酒" />
+<meta name="description" content="yesmywine也买酒，中国首家进口葡萄酒、进口红酒立体销售平台，平均每分钟销售一瓶葡萄酒。一个主张葡萄酒消费应该简单、随意、休闲的新锐品牌。包含近千款法国红酒、法国葡萄酒、智利红酒、意大利红酒、德国红酒、澳大利亚红酒、西班牙红酒、新西兰红酒、阿根廷红酒、美国红酒，以及白葡萄酒、桃红酒、气泡酒、香槟、冰酒和AOC、VDP、VDT各级佳酿。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>选酒中心</title>
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../style/base.css">
+<link rel="stylesheet" type="text/css" href="../style/cart.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+<!--topbar-->
+<div id="topbar">
+  <div class="topbar">
+    <p class="user_login fl"><span>10026143</span> 位会员的选择<a href="login.html" target="_blank">登录</a><i>|</i><a href="login.html"  target="_blank">注册</a></p>
+    <ul class="quick_menu fr">
+      <li><a href="#">会员俱乐部</a><i>|</i></li>
+      <li><a href="login.html">签到</a><i>|</i></li>
+      <li><a href="login.html">我的账户</a><i class="iconfont">&#xe618;</i><i>|</i>
+        <div class="submenu"> <i></i> <a href="#">我的订单</a> <a href="#">我的存酒库</a> <a href="#">我的优惠券</a> <a href="#">我的收藏夹</a> </div>
+      </li>
+      <li><em class="iconfont">&#xe613;</em><a href="#">手机版</a><i>|</i>
+        <ul class="app">
+          <span></span>
+          <li class="app-top"><i>APP首单</i><i>满100得100</i></li>
+          <li class="app-center">
+            <dl>
+              <dt><img alt="手机app二维码" src="../images/red-code.png"></dt>
+              <dd>
+                <h2>下载也买酒客户端</h2>
+                <a href="#"><img alt="也买酒苹果版app" src="../images/ios.png"></a> <a href="#"><img alt="也买酒安卓版app" src="../images/android.png"></a> </dd>
+            </dl>
+          </li>
+          <li class="app-bottom"><a href="#">了解更多客户端优惠</a></li>
+        </ul>
+      </li>
+      <li><a href="#">红酒交易中心</a><i>|</i></li>
+      <li><a href="#">设置勿扰</a> </li>
+    </ul>
+  </div>
+</div>
+<!--topbar end-->
+<div id="head">
+  <div  class="head">
+    <div class="head_logo"> 
+      <!-- <a class="logo-site" href="#">也买酒</a>--> 
+    </div>
+    <div class="crumbCart"></div>
+  </div>
+</div>
+<!--head end--> 
+
+<!--购物车-->
+
+<div id="shopCart">
+  <div class="shopCart clearfix">
+    <div class="listCart">
+      <div class="close">
+        <p><font>温馨提示：</font>也买商城订单可以合并下单啦。无论您的购物车里有几家也买商家的商品都可以合并成一张订单付款。<a href="#" class="cl_t" onclick="$('.close').hide();"></a></p>
+        <div class="jt"></div>
+      </div>
+      <ul>
+        <li class="cart_listLi">
+          <div class="radio">
+            <div class="radio_lf fl">
+              <label class="cart_type"><b></b>由也买酒配送</label>
+            </div>
+            <span class="radio_num fr"><b class="num_1">0</b></span> </div>
+          <div id="cartSource">
+            <div class="boxBorRed clearfix">
+            
+              <div class="trTitle">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td height="34"><input class="select" name="checkbox" type="checkbox">
+                        <label>全选</label></td>
+                      <td>商品名称</td>
+                      <td>单价</td>
+                      <td>数量</td>
+                      <td>小计</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="marginTop" style="border-top:1px solid gray;">
+                <table class="inTable">
+                  <tbody>
+                    <tr class="border">
+                      <td><input class="select1" name="checkbox" type="checkbox"></td>
+                      <td><a href="#"><img src="../images/9438535_60x98.jpg"></a></td>
+                      <td><a href="#">冰酒袋</a></td>
+                      <td>￥<b class="valnum">24.0</b></td>
+                      <td><span>
+                        <button class="but_up putBtn1" id="putBtn1">-</button>
+                        <input value="1" maxlength="3" minvalue="1" maxvalue="500" id="putBtn2" class="putBtn2" type="text">
+                        <button class="but_up putBtn3" id="putBtn3">+</button>
+                        </span></td>
+                      <td>￥<b class="valSum">24.0</b></td>
+                      <td><a href="#">加入收藏夹</a><br/>
+                        <a href="#">删除</a></td>
+                    </tr>
+                    
+                    <tr class="border">
+                      <td><input class="select1" name="checkbox" type="checkbox"></td>
+                      <td><a href="#"><img src="../images/9438535_60x98.jpg"></a></td>
+                      <td><a href="#">冰酒袋</a></td>
+                      <td>￥<b class="valnum">24.0</b></td>
+                      <td><span>
+                        <button class="but_up putBtn1" id="putBtn1">-</button>
+                        <input value="1" maxlength="3" minvalue="1" maxvalue="500" id="putBtn2" class="putBtn2" type="text">
+                        <button class="but_up putBtn3" id="putBtn3">+</button>
+                        </span></td>
+                      <td>￥<b class="valSum">24.0</b></td>
+                      <td><a href="#">加入收藏夹</a><br/>
+                        <a href="#">删除</a></td>
+                    </tr>
+                    
+                  </tbody>
+              
+                </table>
+              </div>
+              <div class="trFooter">
+                <ul>
+                  <li>
+                    <input class="select0" name="checkbox" type="checkbox">
+                    全选</li>
+                  <li><a>批量删除</a></li>
+                  <li><a>批量加入收藏夹</a></li>
+                </ul>
+              </div>
+              
+            </div>
+           
+          </div>
+        </li>
+        <li class="_last">
+          <div class="subtotal"> <span>商品件数：<b class="buy_4_num">1</b> 件</span> <span>商品总价：<b>￥<strong class="b_num">24.0</strong></b></span> <span>活动优惠：<b>￥<strong>-6.0</strong></b></span> <span>优惠券：<b>￥<strong>0</strong></b></span> </div>
+        </li>
+        
+        <!--结算-->
+        <li class="buy clearfix"  style="display:none">
+        	<a class="buy_r" href="#">去结算</a>
+            <a class="buy_2" href="#">没有可领取礼品</a>
+            <a class="buy_3" href="#">商品没有符合优惠券使用条件</a>
+            <a class="buy_4" href="#"> 商品数量：<b class="buy_4_num">0</b>件<strong>应付金额</strong><em>(不含运费)</em>：<i>￥</i><b class="b_num">48.0</b></a>
+        </li>
+        
+        <!--结算 end-->
+      </ul>
+      <script type="text/javascript">
+	  
+	  			           
+		 /*结算*/
+		 $(".putBtn2").attr("value","1");
+		 
+		 
+         $(".putBtn1").click(function(){
+			var p=parseFloat($(this).parent().find(".putBtn2").attr("value"));
+			p--;
+			if(p=="0"){
+				p=1;
+				}
+			$(this).parent().find(".putBtn2").attr("value",p);
+			
+			var o=parseFloat($("td .valnum").html());
+			var s=parseFloat(o*p);
+			$(this).parent().parent().next().find(".valSum").html(s);shop();
+			});
+			
+		 $(".putBtn3").click(function(){
+			var p=parseFloat($(this).parent().find(".putBtn2").attr("value"));
+			p++;
+			$(this).parent().find(".putBtn2").attr("value",p);
+			var o=parseFloat($("td .valnum").html());
+			var s=o*p;
+			$(this).parent().parent().parent().find("td").eq(5).find(".valSum").html(s);shop();			
+			});
+			$(".putBtn2").blur(function(){
+				var p=parseFloat($(this).parent().find(".putBtn2").attr("value"));
+				var o=parseFloat($("td .valnum").html());
+				var s=o*p;
+				$(this).parent().parent().parent().find("td").eq(5).find(".valSum").html(s);
+				
+			});
+		/*inpout*/
+		$(".select").click(function(){
+			var sum=parseFloat($(".putBtn2").eq(0).attr("value"))+parseFloat($(".putBtn2").eq(1).attr("value"));
+			$(".buy_4_num").html(sum);
+			if($(".select").prop("checked")==true){
+				$(".select1").prop({"checked":true});
+				$(".select0").prop({"checked":true});
+				}else{
+				$(".select1").prop({"checked":false});	
+				$(".select0").prop({"checked":false});	
+			}
+		});
+		$(".select0").click(function(){
+			if($(".select0").prop("checked")==true){
+				$(".select1").prop({"checked":true});
+				$(".select").prop({"checked":true});
+				}else{
+				$(".select1").prop({"checked":false});	
+				$(".select").prop({"checked":false});	
+			}
+		});
+		
+		$(".cart_listLi input").click(function(){
+			if($(".select1").eq(0).prop("checked")==true||$(".select1").eq(1).prop("checked")==true){
+			 	$(".buy").show();
+			}else{
+					$(".buy").hide();
+				}
+			
+		})
+		$(".select1").eq(0).click(function(){
+			shop();
+		})
+		$(".select1").eq(1).click(function(){
+			
+			shop();
+		})
+		
+		
+		function shop(){
+			var a=parseFloat($(".putBtn2").eq(0).val());
+			var a1=parseFloat($(".valSum").eq(0).html());
+			var b=parseFloat($(".putBtn2").eq(1).val());
+			var b1=parseFloat($(".valSum").eq(1).html());
+			if(($(".select1").eq(0).prop("checked")==true)&&($(".select1").eq(1).prop("checked")==true)){
+				$(".buy_4_num").html(a+b);
+				$(".b_num").html(a1+b1);
+			}else if($(".select1").eq(0).prop("checked")==true){
+				$(".buy_4_num").html(a);
+				$(".b_num").html(a1);
+			}else if($(".select1").eq(1).prop("checked")==true){
+				$(".buy_4_num").html(b);
+				$(".b_num").html(b1);
+			}
+		}
+		
+      </script>
+        
+    </div>
+    
+    
+    <!--活动享受-->
+    <div class="present">
+   	  <h1>本次购买您可享受以下活动<ins> 所有0元赠品已自动添加到您的购物车中，您可直接结算</ins></h1>
+        <ul>
+        	<li>
+            	<h2>订单满1元加 10.0 元换购</h2>
+            	<dl>
+                	<h3><a href="#"><img src="../images/4599952_110x180.JPG"></a></h3>
+                    <dt><a href="#">戴花酒袋（红毛毡）</a><br></dt>
+                    <dd>
+                    	<span>换购价：10.0元</span>
+                        <span>也买价：60.0元</span>
+                        <span>数  量：<input class="put" value="1" maxlength="6"></span>
+                        <span>可换购<b>48</b>瓶</span>
+                        <span></span>
+                    </dd>
+                    <dd><a class="pre_btn" href="#">购物车</a></dd>
+                </dl>
+            </li>
+            
+            <li>
+            	<h2>订单满1元加 10.0 元换购</h2>
+            	<dl>
+                	<h3><a href="#"><img src="../images/4599952_110x180.JPG"></a></h3>
+                    <dt><a href="#">戴花酒袋（红毛毡）</a><br></dt>
+                    <dd>
+                    	<span>换购价：10.0元</span>
+                        <span>也买价：60.0元</span>
+                        <span>数  量：<input class="put" value="1" maxlength="6"></span>
+                        <span>可换购<b>48</b>瓶</span>
+                        <span></span>
+                    </dd>
+                    <dd><a class="pre_btn" href="#">购物车</a></dd>
+                </dl>
+            </li>
+            
+            <li>
+            	<h2>订单满1元加 10.0 元换购</h2>
+            	<dl>
+                	<h3><a href="#"><img src="../images/4599952_110x180.JPG"></a></h3>
+                    <dt><a href="#">戴花酒袋（红毛毡）</a><br></dt>
+                    <dd>
+                    	<span>换购价：10.0元</span>
+                        <span>也买价：60.0元</span>
+                        <span>数  量：<input class="put" value="1" maxlength="6"></span>
+                        <span>可换购<b>48</b>瓶</span>
+                        <span></span>
+                    </dd>
+                    <dd><a class="pre_btn" href="#">购物车</a></dd>
+                </dl>
+            </li>
+        
+        </ul>
+    
+    </div>
+    <!--活动享受 end-->
+    
+    
+    <!--推荐-->
+    <div class="slideTxtBox">
+    	<div class="hd">
+        	<ul>
+            	<li>最佳搭配</li>
+                <li>浏览记录</li>
+                <li>我的收藏</li>
+            </ul>
+        </div>
+    	<div class="bd">
+        		<ul class="bd_1">
+					<li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+					<li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+					
+				</ul>
+				<ul class="bd_1">
+					<li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+					<li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="goodslist">
+                    	<a href="#"><img class="pics" src="../images/9885819_110x180.JPG"></a>
+                        <dl>
+                        	<dt>
+                            	<a href="#">红木盒子</a><br/>
+                                <p>促销价：<br/><span class="_pice">￥50.0</span></p>
+                                <p><span class="jj_box">
+                                	<a href="#" class="jsub">-</a>
+                                    <input class="mout" name="input" value="1" maxlength="3" minvalue="1" maxvalue="500">
+                                    <a href="#" class="jsub">+</a>
+                                </span></p>
+                                <p><a class="exchange" href="#">加入购物车</a></p>
+                            </dt>
+                        </dl>
+                    </li>
+                    
+					
+				</ul>
+				<ul class="bd_1">
+					<p class="bd_txt">请先<a class="b_lo" href="login.html">登录</a>在查看我的收藏信息！</p>
+				</ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+    	$(".slideTxtBox").slide({delayTime:0});
+    </script>
+    <!--推荐 end--> 
+    
+  </div>
+</div>
+
+<!--购物车 end--> 
+
+<!--footer-->
+<div id="footer" class="footer">
+<div class="foot-license"> <span class="top100">消费者最喜爱的网站TOP100</span> <span class="sep">|</span> <span class="year18">仅限18周岁以上人士购买</span> <span class="sep">|</span> <a href="#"><span class="shzxw">网络社会征信网</span></a> <span class="sep">|</span> <span class="shgs">上海工商</span> <span class="sep">|</span> <span>京公网安备11010502013828</span> </div>
+<div class="foot-copy"> Copyright 2006-2015 也买酒 yesmywine.com 版权所有 <span class="sep">|</span> <a href="#">沪ICP备15036938号-1</a> </div>
+</body>
+</html>

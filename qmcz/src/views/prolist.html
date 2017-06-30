@@ -1,0 +1,46 @@
+<div class="pro" style="margin-top:25px">
+<ul>wo </ul>
+ <ul>wo</ul>
+    <ul>wo</ul>
+</div>
+<div class="pro1">
+    <div class="tv_d" >
+        <div class="tv_d_l" ng-repeat="x in mes">
+            <div class="tv_d_i">
+           <img ng-src={{x.img}}>
+            </div>
+
+            <div class="tv_d_txt">
+                <h3><em>{{x.name}}</em><span>{{x.fname}}</span></h3>
+                <p>{{x.desc}}</p>
+                <div class="txt"><i class="glyphicon glyphicon-tags"></i><em>话剧</em></div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{x.sp}}%;">
+                        <span class="sr-only">{{x.sp}}% Complete</span>
+                    </div>
+
+
+
+                </div>
+                <div class="txt1">
+                    <h6> {{x.sp}}<span>进度</span></h6>
+                    <h6> {{x.rprice}}<span>支持金额</span></h6>
+                    <h6> {{x.rday}}<span>剩余天数</span></h6>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+</div>

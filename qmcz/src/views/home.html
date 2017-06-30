@@ -1,0 +1,172 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top:25px">
+    <!-- Indicators -->
+    <ol class="carousel-indicators ">
+        <li data-target="#carousel-example-generic" class="mar1" data-slide-to="{{$index}}" ng-repeat=" x in homedata.slides" ng-class="{'active':$index==0}"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item" ng-class="{'active':$index==0}"  ng-repeat="y in homedata.slides">
+            <img ng-src={{y.img}} >
+
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div class="hotpro">
+    <div class="hotpro_l">
+        <div class="hot_s">
+            <h2>热门项目</h2>
+            <a href="javascript:;">查看更多</a>
+        </div>
+        <div class="hot_d">
+            <div class="hot_d_l">
+             <img ng-src={{tv[0].img}}  class="img-responsive">
+            </div>
+            <div class="hot_d_r">
+                <h3><em>{{hot[0].name}}</em><span>by {{hot[0].fname}}</span></h3>
+               <p>{{hot[0].desc}}</p>
+              <div class="txt"><i class="glyphicon glyphicon-tags"></i><em>话剧</em><i class="glyphicon glyphicon-expand">
+              </i><em>卫视推荐</em></div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{hot[0].sp}}%;">
+                        <span class="sr-only">{{hot[0].sp}}% Complete</span>
+                    </div>
+
+
+
+                </div>
+                <div class="txt1">
+                <h6> {{hot[0].sp}}%<span>进度</span></h6>
+                <h6> ￥{{hot[0].placement}}<span>支持金额</span></h6>
+                <h6> {{hot[0].rprice}}<span>支持者</span></h6>
+                <h6> {{hot[0].rday}}<span>剩余天数</span></h6>
+
+
+            </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="hotpro_r">
+        <ul class="o_ul">
+            <li ng-repeat="z in list" ng-class="{'colo':$index==4}"><a href="javascript:;" ng-class="{'color':$index==4}">{{z}}</a></li>
+           <!-- <li ><a href="javascript:;">电影</a></li>
+            <li ><a href="javascript:;">电视剧</a></li>
+            <li ><a href="javascript:;">传统戏剧</a></li>
+            <li class="colo"><a href="javascript:;" class="color">话剧</a></li>
+            <li ><a href="javascript:;">书画</a></li>
+            <li ><a href="javascript:;">相声</a></li>
+            <li ><a href="javascript:;">戏剧</a></li>
+            <li ><a href="javascript:;">音乐剧</a></li>
+            <li ><a href="javascript:;">纪录片</a></li>-->
+        </ul>
+     <script>
+        /* $(".o_ul li").click(function () {
+
+             $(this).addClass("colo").siblings().removeClass("colo");
+             $(".o_ul li").find("a").removeClass("color");
+             $(this).find("a").addClass("color");
+         })
+*/
+
+
+     </script>
+    </div>
+
+
+</div>
+
+<div class="tv">
+
+<div class="tv_u">
+    <h2>卫视热推</h2>
+    <a href="javascript:;">查看更多</a>
+</div>
+
+<div class="tv_d" >
+    <div class="tv_d_l" ng-repeat="y in tv">
+      <div class="tv_d_i">
+      <img ng-src="{{y.img}}" class="img-responsive">
+      </div>
+
+    <div class="tv_d_txt">
+        <h3><em>{{y.name}}</em><span>by {{y.fname}}</span></h3>
+        <p>{{y.desc}}</p>
+        <div class="txt"><i class="glyphicon glyphicon-tags"></i><em>话剧</em></div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{y.sp}}%;">
+                <span class="sr-only">{{y.sp}}% Complete</span>
+            </div>
+
+
+
+        </div>
+        <div class="txt1">
+            <h6> {{y.sp}}%<span>进度</span></h6>
+            <h6> ￥{{y.placement}}<span>支持金额</span></h6>
+            <h6> {{y.rday}}<span>剩余天数</span></h6>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+
+<div class="cpt">
+    <h3>合作单位</h3>
+<div class="cpt_img" >
+    <p ng-repeat="x in cpt"><img ng-src="{{x.img}}" class="img-responsive"></p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

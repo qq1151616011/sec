@@ -1,0 +1,43 @@
+/* CSS Document */
+
+.header{ width:100%; height:1.8rem; background:#fff; border-bottom:1px solid #dddcdc}
+.header .return{ color:#69af05; display:inline-block; float:left; font-size:0.7rem; line-height:1.8rem; height:1.8rem; width:20%;}
+.header .return .iconfont{ font-size:0.9rem;}
+.header p{ width:60%; height:1.8rem; line-height:1.8rem; color:#000; margin:0 auto;text-align:center; font-size:0.7rem; float:left}
+.header .register{ line-height:1.8rem; height:1.8rem; width:20%;float:left; display:inline-block; text-align:center; font-size:0.7rem; text-decoration:none; color:#69af05}
+
+.tab{ display:block; background:#fff; margin:1rem 2.5rem 2rem}
+.tab .tab_title{ width:100%; display:block; cursor:pointer}
+.tab .tab_title li{ width:50%; height:1.5rem; color:#69af05; background:#fff; float:left; text-align:center; line-height:1.5rem; border:1px solid #69af05}
+.tab .tab_title .active{ background:#69af05; color:#fff;}
+
+.tab_content .tab_current{ padding-top:4rem;}
+.tab_content .tab_current .uname{ width:100%; height:2rem;}
+.tab_content .tab_current .uname .name{ width:100%; height:1.5rem; padding-bottom:0.5rem;border-bottom:1px solid #dcdcdc}
+.tab_content .tab_current .uname .name i{ color:#e1e1e1; font-size:0.8rem}
+.tab_content .tab_current .uname .name input{ height:1.3rem; width:83%}
+.tab_content .tab_current .uname .name input::-webkit-input-placeholder{ color:#969696; font-size:0.6rem}
+
+.tab_content .tab_current .password{ width:100%; height:2rem;}
+.tab_content .tab_current .password .pass{ width:100%; height:1.5rem; padding-bottom:0.5rem;border-bottom:1px solid #dcdcdc}
+.tab_content .tab_current .password .pass i{ color:#e1e1e1; font-size:1rem}
+.tab_content .tab_current .password .pass input{ height:1.3rem; width:83%}
+.tab_content .tab_current .password .pass input::-webkit-input-placeholder{ color:#969696; font-size:0.6rem}
+.tab_content .login{ width:100%; height:1.5rem; line-height:1.5rem; text-align:center; font-size:0.5rem;color:#fff; background:#969696; margin-top:1rem;}
+.tab_content .asd .find{ width:100%; height:1rem; line-height:1rem; margin-top:0.5rem;}
+.tab_content .asd .find a{ text-decoration:none; color:#69af05; float:right; letter-spacing:0.02rem}
+.tab_content .wsx .find{ width:100%; height:1rem; line-height:1rem; margin-top:0.5rem; color:#000;letter-spacing:0.02rem; text-align:center}
+.tab_content .wsx .find a{ text-decoration:none; color:#69af05; letter-spacing:0.02rem}
+.tab_content .asd{ display:block}
+.tab_content .wsx{ display:none}
+
+.tab_content .tab_current .partake{ width:100%; margin-left:7.5%; margin-top:3rem}
+.tab_content .tab_current .partake a{ text-decoration:none; float:left; width:25%; height:5rem; }
+.tab_content .tab_current .partake .qq .iconfont{font-size:1.6rem;color:#4dafea;}
+.tab_content .tab_current .partake .weibo{ margin-right:-0.3rem}
+.tab_content .tab_current .partake .weibo .iconfont{font-size:1.5rem; color:#d81e06;}
+.tab_content .tab_current .partake .pay{margin-top:0.1rem;}
+.tab_content .tab_current .partake .pay .iconfont{font-size:1.5rem;color:#00a1e9; }
+.tab_content .tab_current .partake .weixin{margin-top:0.1rem;}
+.tab_content .tab_current .partake  .iconfont{ font-size:1.5rem;color:#1afa29;}
+

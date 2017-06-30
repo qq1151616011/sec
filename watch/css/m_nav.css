@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;}
+#menu{
+	position: fixed;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	/*left: 10px; top: 10px; */
+	list-style: none; 
+	z-index: 70;
+}
+#menu li {
+	float: left;
+	padding:10px 0px;
+	margin:12px 10px 0 0; 
+	font-size: 17px;
+}
+
+#menu li:first-child{
+	margin-top:0px;
+}
+
+#menu a { float: left; padding: 10px 20px;color: #999; text-decoration: none;}
+#menu a:hover{color: #c4a07d;}
+#menu .active a { color: #c4a07d;}
+
+.fp-controlArrow{opacity: 0.4;}/*箭头*/

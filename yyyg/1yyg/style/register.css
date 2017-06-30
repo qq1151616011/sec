@@ -1,0 +1,58 @@
+/* CSS Document */
+
+/*头部*/
+
+header{ height:108px; width:100%;
+}
+header .header_img{margin-left:188px;margin-top:35px;position:relative}
+header .header_text{margin-right:188px;margin-top:78px;font-size:14px; color:#666;}
+header .header_text a{ text-decoration:none;color:#22aaff; font-size:14px;}
+header .header_text a:hover{color:#ff6600;}
+
+/*主体*/
+article{ height:650px; width:100%;
+ padding-top:24px;}
+article .article_box{ width:958px;height:650px;margin:0px auto 0px; border:1px solid #e4e4e4;}
+article .article_box .article_box_input {width:310px;height:374px;background:white;position:relative; padding:34px 40px 0px 40px; margin:100px auto 0px;}
+article .article_box .article_box_input p{ font-size:20px;color:#333; line-height:18px; margin-bottom:30px; text-align:center}
+article .article_box .article_box_input p span{color:#ff6600; font-size:16px;float:right;}
+article .article_box .article_box_input p span a{ text-decoration:none;color:#ff6600;}
+article .article_box .article_box_input p span a:hover{ text-decoration: underline ;}
+article input{ outline:none;}
+article .article_box .article_box_input .input1{width:310px;height:42px; margin-bottom:20px; box-sizing:border-box;border:1px solid #ddd}
+article .article_box .article_box_input .input1 input{width:308px;height:40px;color:#bbb;border:none; box-sizing:border-box;padding:0px 0px 0px 40px; font-size:14px; }
+article .article_box .article_box_input .input2{width:310px;height:42px; margin-bottom:20px; box-sizing:border-box;border:1px solid #ddd}
+article .article_box .article_box_input .input2 input{width:308px;height:40px;color:#bbb;border:none; box-sizing:border-box;padding:0px 0px 0px 40px; font-size:14px; }
+
+article .article_box .article_box_input .input22{width:310px;height:42px; margin-bottom:20px; box-sizing:border-box;border:1px solid #ddd}
+article .article_box .article_box_input .input22 input{width:308px;height:40px;color:#bbb;border:none; box-sizing:border-box;padding:0px 0px 0px 40px; font-size:14px; }
+
+
+
+
+article .article_box .article_box_input .input3{width:310px;height:42px; margin-bottom:5px; box-sizing:border-box; background:#ff6600;}
+article .article_box .article_box_input .input3:hover{background:#F30}
+article .article_box .article_box_input .input3 input{width:308px;height:40px;color:white;border:none; background:none; box-sizing:border-box; font-size:16px; cursor:pointer; }
+article .article_box .article_box_input .input3 a{ display: inline-block;width:100%; height:100%; text-decoration:none; }
+article .article_box .article_box_input .bottom{ width:310px; font-size:14px;color:#333; text-align:center}
+article .article_box .article_box_input .bottom a{color:#666;}  
+article .article_box .article_box_input .bottom a:hover{color:#ff6600;}
+
+article .article_box .fff{width:310px;height:40px;color:#333; background:#ddd; margin-bottom:50px; text-align:center; line-height:40px; font-size:12px; position:relative;}
+article .article_box .fff a{ display:inline-block; width:100%; height:100%; color:#333; text-decoration:none}
+article .article_box .fff s{ position:absolute; top:0px; left:0px; font-size:14px; text-decoration:none ; float:left; background:white; width:40px; height:40px; box-sizing:border-box; border:1px solid #e4e4e4; cursor:move} 
+  
+  
+article .article_box .article_box_input .pic1{width:20px;height:20px;position:absolute;z-index:11; top:93px;left:51px;background:url(../images/passport-icon.png) no-repeat 0px 0px;}
+article .article_box .article_box_input .pic2{width:20px;height:20px;position:absolute;z-index:11; top:154px;left:51px;background:url(../images/passport-icon.png) no-repeat 0px -25px;}
+article .article_box .article_box_input .pic3{width:20px;height:20px;position:absolute;z-index:11; top:215px;left:51px;background:url(../images/passport-icon.png) no-repeat 0px -25px;}
+
+/*底部*/
+footer{ height:38px; width:100%;padding-top:38px;
+}
+footer .footer_up{ font-size:12px;height:12px; line-height:12px; margin:0px auto 10px; position:relative; text-align:center}
+footer .footer_up a{ text-decoration:none;color:#666666;}
+footer .footer_up a:hover{ text-decoration: underline;color:#ff6600}
+footer .footer_up i{ display:inline-block;height:12px;width:1px;margin:0 13px; background:#dddddd}
+footer p{ height:12px; color:#999; margin:0 auto; font-size:12px; text-align:center}
+footer h5{ width:100% ; height:30px;}

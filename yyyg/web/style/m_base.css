@@ -1,0 +1,104 @@
+/* CSS Document */
+*,::before,::after{margin:0; padding:0; -webkit-box-sizing:border-box; -webkit-tap-highlight:transparent;/*清除点击默认的高亮效果*/}
+
+a, article, aside, audio, b, blockquote, body, canvas, caption, dd,  details,div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, label, legend, li, menu, nav, object, ol, output, p,s, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video
+ { margin: 0; padding: 0; border: 0; }
+ 
+ol, ul,li{ list-style: none;}
+table { border-collapse: collapse;/*表格的边线重叠*/ border-spacing: 0; }
+input,textarea{border:0 none; resize:none;/*调整尺寸*/  outline:none;/*清除表单默认的蓝色边框效果*/ -webkit-appearance:none;/* 针对表单的默认的样式进行清除  比如立体效果*/}
+
+img{ display:block;}
+
+a,a:link,a:visited{ text-decoration:none; color:#343434;}
+
+	}
+.clearfix:after{content:""; display:block; height:0; clear:both; visibility:hidden;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+html{-webkit-text-size-adjust: none;/*不调整（拉伸）字大小*/  font-size:50px;/*表示50px=1rem;       625%    62.5%*/}
+
+body{font-family: "microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif; font-size:24px;  }  
+
+                 /*微软雅黑      华文细黑                                         最后一个字体：ios系统默认 */ 
+				 
+				 
+				 
+.m_layout{ max-width:15rem; min-width:6.4rem; width:100%; background:rgba(255,255,255,1); margin:0 auto; }				 
+				 
+				 
+ @font-face {font-family: "iconfont";
+          src: url('../fonts/iconfont.eot'); /* IE9*/
+          src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+          url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+          url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+          font-family:"iconfont" !important;
+          font-size:16px;
+          font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;
+        }				 
+				 
+				 
+				 
+				 
+/* 
+  rem方式，750px 为高保真基准，原高保真大小除以基数50，即 10px/50 = 0.2rem，以此类推,字体还是 px
+ */
+
+
+html{font-size:50px;}
+body{font-size:24px;}
+
+
+@media screen and (min-width:320px){
+  html{font-size:21.333333333333332px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:360px){
+  html{font-size:24px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:375px){
+  html{font-size:25px;}
+  body{font-size:12px;}
+}
+@media screen and (min-width:384px){
+html{font-size:25.6px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:400px){
+html{font-size:26.666666666666668px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:414px){
+html{font-size:27.6px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:424px){
+html{font-size:28.266666666666667px;}
+body{font-size:14px;}
+}
+@media screen and (min-width:480px){
+html{font-size:32px;}
+body{font-size:15.36px;}
+}
+@media screen and (min-width:540px){
+html{font-size:36px;}
+body{font-size:17.28px;}
+}
+@media screen and (min-width:720px){
+html{font-size:48px;}
+body{font-size:23.04px;}
+}
+@media screen and (min-width:750px){
+html{font-size:50px;}
+body{font-size:24px;}
+}

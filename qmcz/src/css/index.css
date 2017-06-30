@@ -1,0 +1,40 @@
+div[ui-view]{
+    width: 1200px;
+    margin:0px auto ;
+
+}
+.header{height: 44px;padding-top: 26px;position: relative;}
+.header .logo{padding: 0 40px;}
+.header .logo img{width: 98px;}
+.header .nav li{float: left;padding: 4px 30px 0;    position: relative;
+    top: -10px;}
+.header .nav li a{ font-size: 14px;font-weight: bold;color:#828282;}
+.header .header-search{padding:4px 35px 0;width:400px;}
+.header .header-search img{height:22px;position:relative;left:0;vertical-align:top;top: -2px;}
+.header .header-search input{border: none;width:80%;}
+.header .headerline{position: absolute;width:1px;height: 100%;background:#d9d9de;top:16px; left: 558px;}
+.header .login-res{padding: 4px 0 0;margin-right: 34px;}
+.header .login-res a{color:#ff4200;font-size: 14px;font-weight: bold;display:inline-block;padding: 0 10px; }
+.clearfix:after { clear: both; display: table; content: " " }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w1200{width:1200px;margin: 0 auto;}
+.w{width:1040px;margin: 0 auto;padding-left: 80px;padding-right: 80px;}
+blockquote, body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, input, li, ol, p, pre, ul ,img,span{ margin: 0; padding: 0; font-family: "Microsoft Yahei" }
+address, caption, cite, code, em, h1, h2, h3, h4, h5, h6, pre, strong, table, td, th { font-weight: normal; font-style: normal; font-size: 1em }
+strong { font-weight: normal }
+ol, ul { list-style: none outside none }
+fieldset, img { border: medium none }
+button, input:focus { outline: 0; border: none }
+caption, th { text-align: left }
+table { border-collapse: collapse; border-spacing: 0 }
+body { margin: 0; padding: 0; background: #fff none repeat scroll 0 0; color: #828587; font: 12px/150% "Microsoft Yahei", arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif }
+a { outline: medium none; color: #999 }
+a:active, a:link, a:visited { text-decoration: none }
+a:hover{color:#cf000e;text-decoration: none;}
+cite, em, i { font-style: normal }
+article, aside, dialog, figure, footer, header, menu, nav, section { display: block }

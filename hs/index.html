@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="fullpage/css/jquery.fullPage.css">
+	<link type="text/css" rel="stylesheet" href="three/css/carousel.css">
+	<link href="two1/css/style.css" rel="stylesheet">
+	<link href="two1/css/slimbox2.css" rel="stylesheet">
+	<link rel="stylesheet" href="four/animate.css">
+	<link rel="stylesheet" href="123/css/lrtk.css">
+	<link rel="stylesheet" type="text/css" href="five/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="five/css/style4.css" />
+
+
+	<script src="fullpage/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="two1/js/slimbox2.js"></script>
+    <script type="text/javascript" src="two1/js/js.js"></script>
+	<script src="fullpage/js/jquery.fullPage.min.js"></script>
+	<script src="three/js/jquery.carousel.js"></script>
+
+	<style type="text/css">
+		*{padding: 0px; margin: 0px}
+		#menu { margin: 0 auto; padding: 0; position: fixed; left: 0px; top:0px;list-style-type: none; z-index: 70;width: 100%;height: 80px;background:rgba(0,0,0,0.15);overflow:hidden;}
+		#menu li { float: left; font-size: 14px; padding-top: 10px;margin: 0 auto; }
+		#menu li a { float: left; padding: 10px 20px; color:rgb(237,215,215); text-decoration: none;width: 70px; text-align: center; }
+		#menu img{float: left;padding-left: 150px;padding-right: 150px;}
+		#menu .active a { color: #fff; background-color:rgba(255,38,3,0.5);}
+		#menu a:hover{background:rgba(255,38,3,0.5);color: #fff}
+		#box{width: 100%;}
+		.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff; width: 100%;}
+        .caroursel{margin:150px auto;}
+        .correct img{width: 100px; height: 100px;}
+
+        .section2 .jq22-container{margin: 150px 0 0 240px;}
+        .section2 .jq22-container:hover{cursor: pointer;}
+        .section2{position: relative;}
+ 	    .section2 .second2_p{position: absolute;left:3%;top: 28%;text-align: left;display: none;}
+	    .section2 .second2_p h2{font-size:55px;font-family: Impact;color: #D62010;}
+	    .section2 .second2_p p{ font-size: 14px; padding-left:30px;font-family: "微软雅黑";color: white;line-height: 25px;}
+	    .section2 .second2_h {width: 244px;height: 130px;border-top: 4px solid red;margin-top:40px; }
+        .section2 .second2_h h2{color: white;padding-top: 10px;font-size: 40px;}
+        .section2 .second2_h p{font-size: 16px;letter-spacing: 1px;padding-top: 10px;}
+		.section2 .second2_p span{font-family: "微软雅黑";color: white;padding-left:20px;}
+		.section2 p{ display: none;}
+
+		.section3{position: relative;}
+ 	    .section3 .second3_p{position: absolute;left:3%;top: 28%;text-align: left;}
+	    .section3 .second3_p h2{font-size:55px;font-family: Impact;color: #D62010;}
+	    .section3 .second3_p p{ font-size: 14px; padding-left:30px;font-family: "微软雅黑";color: white;line-height: 25px;}
+	    .section3 .second3_h {width: 244px;height: 130px;border-top: 4px solid red;margin-top:40px; }
+        .section3 .second3_h h2{color: white;padding-top: 10px;font-size: 40px;}
+        .section3 .second3_h p{font-size: 16px;letter-spacing: 1px;padding-top: 10px;}
+		.section3 .second3_p span{font-family: "微软雅黑";color: white;padding-left:20px;}
+        #scense{width: 70%;height:110%;float: right;padding-right: 5%;padding-top: 10%;position: relative;}
+	    div.flip-3d { perspective: 1200px; width: 30%; float: right;height: 30%;padding-right: 2%;margin-top: 4%;cursor: pointer;}       
+	    div.flip-3d figure {position: relative;transform-style: preserve-3d;transition: 1s transform; font-size: 1.6rem;}
+	    div.flip-3d figure img {width: 97%; height: auto;}
+	    div.flip-3d figure figcaption {position: absolute;width: 100%; height: 100%; top: 0;transform: rotateY(.5turn) translateZ(1px);background: rgba(0,0,0,0.6);opacity: 0.6;transition: 1s .5s opacity;display: none;font-size: 14px;color: white;text-align: center;font-family:"微软雅黑";}
+	    div.flip-3d:hover figure{ transform: rotateY(.5turn); }
+	    div.flip-3d:hover figure figcaption { opacity: 1;display: block;} 
+	    #scense .second4_p{position: absolute;left: -30%;top: 25%;text-align: left;display: none;}
+	    #scense .second4_p h2{font-size:50px;font-family: Impact;color: #D62010;}
+	    #scense .second4_p p{ font-size: 14px; padding-left:30px;font-family: "微软雅黑";color: white;line-height: 25px;}
+	    #scense .second4_h {width: 244px;height: 130px;border-top: 4px solid red;margin-top:40px; }
+        #scense .second4_h h2{color: white;padding-top: 10px;font-size: 40px;}
+        #scense .second4_h p{font-size: 16px;letter-spacing: 1px;padding-top: 10px;}
+
+		.section5{position: relative;}
+        .section5 .five{ width:800px; height: 450px; margin:130px 120px 120px 450px;float: left; overflow: hidden;}
+		.section5 .five div{ width: 16.6%;float: left; transition: all 1s;}
+		.section5 .five img{  width: 336px; height:503px; cursor: pointer;}
+		.section5 .five:hover div{ width: 10%; }
+		.section5 .five div:hover{ width: 40%; }
+		.section5 .second0_p {position: absolute;left:3%;top: 25%;text-align: left;display: none;}
+	    .section5 .second0_p h2{font-size:50px;font-family: Impact;color: #D62010;}
+	    .section5 .second0_p p{ font-size: 14px; padding-left:30px;font-family: "微软雅黑";color: white;line-height: 25px;}
+	    .section5 .second0_h {width: 244px;height: 130px;border-top: 4px solid red;margin-top:40px; }
+        .section5 .second0_h h2{color: white;padding-top: 10px;font-size: 40px;}
+        .section5 .second0_h p{font-size: 16px;letter-spacing: 1px;padding-top: 10px;}
+		
+		.section6{position: relative;}
+		.section6 .second9_p {position: absolute;left:450px;top: 150px;text-align: center;}
+	    .section6 .second9_p h2{font-size:50px;font-family: Impact;color: #D62010;padding-bottom:20px; }
+	    .section6 .second9_p p{ font-size: 14px;font-family: "微软雅黑";color: white;line-height: 25px;}
+	    .section6 #bottom_{width: 100%;height:100px;position: absolute;left: 0px;bottom: 0px;background: rgba(0,0,0,0.5);}
+	    .section6 #bottom_ p{margin:0px;padding:0px;font-size: 12px;line-height: 22px;margin-top: 20px;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+		$('#box').fullpage({
+				sectionsColor:[,"green","yellow","black","red","red"],
+				anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+				menu: '#menu',
+				navigation:'true',
+				slidesNavigation:'true',
+				continuousVertical:'true',
+				afterLoad: function(anchorLink, index){
+					//滚动到第二屏
+					if(index == 2){
+						$('.second2_p').fadeIn(2000);
+						$('.second2_p').find("p").fadeIn(2000);
+					}
+					//滚动到第三屏
+					if(index == 3){
+						$('.second3_p').fadeIn(2000);					
+					}
+					if(index == 4){
+						$('.flip-3d').find('img').fadeIn(2000);
+						$('.flip-4d').find('img').fadeIn(2000);
+						$('.second4_p').delay(1000).slideDown(2000);	
+					}
+					if(index == 5){
+						$('.second0_p').fadeIn(2000);
+						$('.second0_p').find("p").fadeIn(2000);
+					}
+					if(index == 6){
+						$('.section6').find('p').fadeIn(2000);
+					}									
+				},
+				onLeave: function(index, direction){
+					//在离开第二屏的时候执行
+					if(index == '2'){
+					$('.second2_p').fadeOut();
+					$('.second2_p').find("p").fadeOut();
+					}
+					if(index == '3'){
+						$('.second3_p').fadeOut();
+					}
+					if(index == '4'){
+						$('.flip-3d').find('img').fadeOut();
+						$('.flip-4d').find('img').fadeOut();
+						$('.second4_p').slideUp();	
+					}
+					if(index == '5'){
+						$('.second0_p').fadeOut();
+						$('.second0_p').find("p").fadeOut();
+					}
+					if(index == '6'){
+						$('.section6').find('p').delay(500).animate({
+							left: '-120%'
+						}, 1500, 'easeOutExpo');
+					}
+				}
+			});
+			setInterval(function(){
+        		$.fn.fullpage.moveSlideRight();
+    		}, 3000);
+		    $(window).resize(function(){
+		        autoScrolling();
+		    });
+		    function autoScrolling(){
+		        var $ww = $(window).width();//获取可视窗口的宽度
+		        if($ww < 768){
+		            $.fn.fullpage.setAutoScrolling(false);
+		        } else {
+		            $.fn.fullpage.setAutoScrolling(true);
+		        }
+		    };
+		    autoScrolling();//界面初始化完毕之后，立即执行
+			Caroursel.init($('.caroursel'))
+			var $animate = $('#animate');
+			var $opposite = $('#opposite');
+			$(".wrap").hover(function(){
+				$animate.removeClass();
+				$opposite.removeClass();
+				$animate.addClass("test");
+				$opposite.addClass('test2');
+			},function(){
+				$animate.removeClass();
+				$opposite.removeClass();
+				$animate.addClass("test2");
+				$opposite.addClass('test');
+			});
+			$(".well-item").hover(function(){
+				$(this).find(".correct").children().removeClass();
+				$(this).find(".opposite").children().removeClass();
+				$(this).find(".correct").children().addClass("test");
+				$(this).find(".opposite").children().addClass('test2');
+			},function(){
+				$(this).find(".correct").children().removeClass();
+				$(this).find(".opposite").children().removeClass();
+				$(this).find(".correct").children().addClass("test2");
+				$(this).find(".opposite").children().addClass('test');
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul id="menu">
+			<img src="imga/logo.png" height="80px">
+			<li data-menuanchor="page1" class="active"><a href="#page1">首页</br><span>HOME</span></a></li>
+			<li data-menuanchor="page2"><a href="#page2">作品展示</br><span>WORKS</span></a></li>
+			<li data-menuanchor="page3"><a href="#page3">客照赏析</br><span>SHOWCASE</span></a></li>
+			<li data-menuanchor="page4"><a href="#page4">全球旅拍</br><span>TRAVEL</span></a></li>
+		 	<li data-menuanchor="page5"><a href="#page5">婚纱礼服</br><span>DRESS</span></a></li>
+		 	<li data-menuanchor="page6"><a href="#page6">联系我们</br><span>CONTACT</span></a></li>
+
+	</ul>
+	<div id="box">
+	    <!-- 第一张 -->
+		<div class="section">
+			<div class="slide"><img src="imga/2.jpg" style="width: 100%;height: 100%;"></div>
+			<div class="slide"><img src="imga/1.jpg" style="width: 100%;height: 100%;"></div>
+			<div class="slide"><img src="imga/3.jpg" style="width: 100%;height: 100%;"></div>
+		</div>
+		<!-- 第二张 -->
+		<div class="section section2" style="background: url(imga/b1.jpg) no-repeat; background-size: 100%">
+	         <div class="second2_p">
+	          	<h2>WORKS</h3>
+	          	<p>A PERSON MUST WEAR A WHITE WEDDING</br>DRESS,ACCORDING TO A </br>MIMI'S WEDDING</p>
+	          	<div class="second2_h">
+		          	<h2>作品展示</h2>
+		          	<p>一个人一生一定要穿一次白白的婚纱，照一张美美的的婚纱照</p>
+				</div>
+	        </div>
+		    <article class="jq22-container">
+				<div class = "caroursel poster-main" data-setting = '{
+			        "width":800,
+			        "height":320,
+			        "posterWidth":450,
+			        "posterHeight":300,
+			        "scale":0.8,
+			        "dealy":"2000",
+			        "algin":"middle"
+			    }'>
+			        <ul class = "poster-list">
+			            <li class = "poster-item"><img src="imga/two/1.jpg" width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/2.jpg" width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/3.jpg" width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/4.jpg" width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/5.jpg" width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/6.jpg"  width = "100%" height="100%"></li>
+			            <li class = "poster-item"><img src="imga/two/7.jpg"  width = "100%" height="100%"></li>
+			        </ul>		        
+			        <div class = "poster-btn poster-prev-btn"></div>
+			        <div class = "poster-btn poster-next-btn"></div>
+			    </div>
+	    	</article>
+		</div>
+		<!-- 第三张 -->
+		<div class="section section3" style="background:url(imga/b2.jpg) no-repeat;background-size: 100%;">
+	          <div class="second3_p">
+	          	<h2>SHOW</br><span>CASE</span></h3>
+	          	<p>PASSION IN DEEP WITHOUT ORIGIN</p>
+	          	<div class="second3_h">
+		          	<h2>客照赏析</h2>
+		          	<p>情不知所起，一往情深</p>
+				</div>
+	         </div>
+	        <div class="right-bar">
+	            <div class="cards_wrap no-bounce no-border grayscale-images clearfix" id="second_wrapper" style="margin-left: 37%">
+	                <li class="cards" id="second_1">
+	                    <a href="two1/images/eat1.jpg" rel="lightbox-three" title="February photo">
+	                        <img src="two1/images/eat1.jpg"></a>
+	                    <span class="overlap_caption">二月客照</span>
+	                </li>
+	                <li class="cards" id="second_2">
+	                    <a href="two1/images/eat2.jpg" rel="lightbox-three" title="March photo">
+	                        <img src="two1/images/eat2.jpg"></a>
+	                    <span class="overlap_caption">三月客照</span>
+	                </li>
+	                <li class="cards" id="second_3">
+	                    <a href="two1/images/eat3.jpg" rel="lightbox-three" title="April photo">
+	                        <img src="two1/images/eat3.jpg" class="blurred"></a>
+	                    <span class="overlap_caption">四月客照</span>
+	                </li>
+	                <li class="cards" id="second_4">
+	                    <a href="two1/images/eat4.jpg" rel="lightbox-three" title="May photo">
+	                        <img src="two1/images/eat4.jpg" ></a>
+	                    <span class="overlap_caption">五月客照</span>
+	                </li>
+	                <li class="cards" id="second_5">
+	                    <a href="two1/images/eat5.jpg" rel="lightbox-three" title="June photo">
+	                        <img src="two1/images/eat5.jpg"></a>
+	                    <span class="overlap_caption">六月客照</span>
+
+	                </li>
+	                <li class="cards" id="second_7">
+	                    <a href="two1/images/eat6.jpg" rel="lightbox-three" title="July photo">
+	                        <img src="two1/images/eat6.jpg"></a>
+	                    <span class="overlap_caption">七月客照</span>
+	                </li>
+	         	</div>
+	         </div>
+		</div>
+		<!-- 第四张 -->
+		<div class="section section4" style="background:url(imga/b3.jpg) no-repeat; background-size: 100%">
+			<div id="scense">
+	          <div class="second4_p">
+	          	<h2>TRAVEL</h3>
+	          	<p>THE BEST HAPPINESS IS TO REMEMBER</br>A PERSON</p>
+	          	<div class="second4_h">
+		          	<h2>全球旅拍</h2>
+		          	<p>最好的幸福,是把一个人记住</p>
+				</div>
+	          </div>
+		      <div class="flip-3d">
+			      <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/m1.jpg" style="display: none;"></a>
+					</div>
+			        <figcaption>沙滩风情-马尔代夫</br>TIME:2016.11.10 Hot:148</figcaption>
+			      </figure>
+			    </div>
+				    <div class="flip-3d">
+				    <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/bali1.jpg" style="display: none;"></a>
+						<figcaption>英伦年华-巴黎</br>TIME:2016.10.09 Hot:1345</figcaption>
+					</div>
+				    </figure>
+			    </div>
+			   <div class="flip-3d">
+				    <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/balidao1.jpg" style="display: none;"></a>
+					</div>
+				      <figcaption>异国风韵-巴厘岛</br>TIME:2016.09.07 Hot:1365</figcaption>
+				    </figure>
+		      </div>
+			   <div class="flip-3d">
+				    <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/m2.jpg" style="display: none;"></a>
+						<figcaption></figcaption>
+					</div>
+				    </figure>
+		      </div>
+			   <div class="flip-3d">
+				    <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/bali0.jpg" style="display: none;"></a>
+					</div>
+				      <figcaption></figcaption>
+				    </figure>
+		      </div>
+			   <div class="flip-3d">
+				    <figure>
+					<div id="images">
+						<a id="example2-2">
+						<img alt="" src="imga/balidao2.jpg" style="display: none;"></a>
+						<figcaption></figcaption>
+					</div>
+				    </figure>
+		      </div>
+		      </div>
+		</div>
+		<!-- 第五张 -->
+		<div class="section section5" style="background:url(imga/b4.jpg) no-repeat; background-size: 100%">
+			<div class="second0_p">
+	          	<h2>DRESS</h3>
+	          	<p>THAT A THIN DRESS,CARRYING MANY OF OUR</br>DREAMS AND HOPES</p>
+	          	<div class="second0_h">
+		          	<h2>婚纱礼服</h2>
+		          	<p>那一件薄薄的婚纱,承载着我们许多的梦想和希望</p>
+				</div>
+	        </div>
+			<div class="five">
+				<div><img src="imga/hunsha1.jpg" alt=""></div>
+				<div><img src="imga/hunsha2.jpg" alt=""></div>
+				<div><img src="imga/hunsha3.jpg" alt=""></div>
+				<div><img src="imga/hunsha4.jpg" alt=""></div>
+				<div><img src="imga/hunsha5.jpg" alt=""></div>
+				<div><img src="imga/hunsha6.jpg" alt=""></div>
+			</div>
+		</div>
+		<!-- 第六张 -->
+		<div class="section section6" style="background:url(imga/b5.jpg) no-repeat; background-size: 100%">
+			<div class="second9_p">
+	          	<h2>CONTACT US</h3>
+	          	<p>THAT A THIN DRESS,CARRYING MANY OF OUR DREAMS AND HOPES</p>
+	        </div>
+			<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">				
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h3>Q  Q</h3>
+										<p>597264534</p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h3>微信</h3>
+										<p>xiandaijingdian</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>微博账号</h3>
+										<p>18304018476</p>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>咨询热线</h3>
+										<p>0371-37644928</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>邮箱账号</h3>
+										<p>597264534@qq.com</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div id="bottom_">
+					<p>©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号 违法和不良信息举报电话：185-0130-1238</br>公司地址：郑州市金水区,中州大道农业路,苏荷中心2230室 联系电话：0371-55086675 4006 0371 22</br>
+					郑州现代经典婚纱摄影</p>	
+				</div>
+		</div>
+	</div>
+</body>
+</html> ~

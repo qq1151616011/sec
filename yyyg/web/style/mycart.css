@@ -1,0 +1,69 @@
+/*顶部*/
+.m_layout .nav{width:100%;height:1.84rem; line-height:1.84rem; background:#ff6600; font-size:0.68rem; text-align:center; color:white; position: relative; border-bottom:0.04rem solid #c95e10;}
+.m_layout .nav .nav1{ position:absolute; top:0.26rem; left:0.98rem; border:0.04rem solid #e44e00; border-left:none; width:1.56rem;height:1.30rem; line-height:1.20rem; font-size:0.48rem; border-bottom-right-radius:0.2rem;border-top-right-radius:0.2rem; text-align:left; text-indent:0.1rem ; }
+.m_layout .nav .nav1 span{width:0.66rem;height:1.3rem; display:block; position:absolute; left:-0.6rem; top:-0.02rem; background:url(../images/mainIcon.png) no-repeat -0.02rem -6.53rem; background-size:3.2rem 12.14rem;}
+.m_layout .nav .nav1 a{ color:white; display:block; width:100%; height:100%}
+.m_layout .nav .nav2{ position:absolute; top:0.22rem; right:0.26rem; border:0.02rem solid #e44e00; width:1.56rem;height:1.36rem; line-height:1.36rem; font-size:0.48rem; border-radius:0.2rem; text-align:center;}
+.m_layout .nav .nav2 i{ font-size:0.78rem;}
+.m_layout .nav .nav2 a{ color:white; display:block; width:100%; height:100%}
+/*中部*/
+.m_layout .goods{width:100%;height:5.28rem; background:#f4f4f4; overflow:hidden}
+
+.m_layout .goods .iphone{width:14.2rem;height:4.48rem; box-sizing:border-box; border:0.02rem solid #e4e4e4; margin:0.4rem; border-radius:0.2rem; padding:0.3rem; background:#fff;}
+.m_layout .goods .iphone .iphone_l{ float:left;width:3.2rem;height:3.2rem;}
+.m_layout .goods .iphone .iphone_l img{ width:3.2rem;height:3.2rem;}
+.m_layout .goods .iphone span{ font-size:0.48rem; color:#666; display: inline-block; margin-bottom:0.2rem}
+.m_layout .goods .iphone span a{ color:#666}
+.m_layout .goods .iphone p{ font-size:0.48rem; color:#bbb; margin-bottom:0.1rem}
+.m_layout .goods .iphone p b{ font-weight:normal;}
+.m_layout .goods .iphone p small i{ font-style:normal;}
+.m_layout .goods .iphone p small{ font-size:0.48rem; color:#ff6600;}
+
+
+.m_layout .goods .iphone .iphone_r{ float:left; margin-left:0.7rem;}
+.m_layout .goods .num{ position: relative;}
+#input1{width:2.4rem; height:1.2rem; border:0.02rem solid #bababa; background:white; color:#616161; border-radius:0.1rem; text-align:center;font-size:0.8rem;}
+#btn1{width:1.2rem; height:1.2rem; border:0.02rem solid #e4e4e4; background:white; color:#999; border-radius:0.1rem; outline:none;font-size:0.8rem;}
+#btn2{width:1.2rem; height:1.2rem; border:0.02rem solid #e4e4e4; background:white; color:#999; border-radius:0.1rem;outline:none; font-size:0.8rem;}
+#btn3{width:1.2rem; height:1.2rem; border:0.02rem solid #e4e4e4;  border-radius:0.1rem;outline:none; display: inline-block; position:absolute;right:0rem;; top:0rem; background:url(../images/setIcon.png) no-repeat -2rem -3rem; background-size:3.2rem 12.14rem; }
+
+.middle{ width:100%; height:1.48rem; background:white; border-bottom:0.02rem #e4e4e4 solid;border-top:0.02rem #e4e4e4 solid; line-height:1.48rem;  font-size:0.48rem;color:#999;  }
+.bottom{width:100%; height:2rem; border-bottom:0.02rem #e4e4e4 solid;  padding:0.2rem 0.4rem;position:relative;}
+.bottom em{ display:block; font-size:0.48rem; font-style: normal; margin-bottom:0.06rem;color:#6d6d6d;}
+.bottom em small{font-size:0.52rem; color:#ff6600}
+.bottom s{ text-decoration:none;color:#a1a1a1; }
+.bottom button{ background:#ff6600; border:none; border-radius:0.12rem; width:4.68rem;height:1.6rem; position:absolute; right:0.4rem; top:0.2rem; outline:none; font-size:0.66rem; cursor:pointer; color:white; letter-spacing:0.1rem; line-height:1.3rem; text-align:center;}
+.bottom button a{color:#fff;}
+h4{width:100%; height:0.4rem; background:#f4f4f4}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.m_layout .middle b{ display:inline-block; height:0.74rem;width:0.74rem;margin-right:0.30rem;  position:relative; top:0.2rem; left:0.2rem;  border: 1px solid #bbb; border-radius:50%;}
+
+
+
+/*footer*/
+
+
+footer ul{ border-bottom:0.06rem solid #e4e4e4; border-top:0.06rem solid #e4e4e4; width:100%; height:1.36rem; box-sizing:border-box}
+footer ul li{ font-size:0.46rem; float:left; width:25%; text-align:center;height:1.30rem; line-height:1.30rem; border-right:0.06rem solid #e4e4e4; box-sizing:border-box; }
+footer ul:first-child{border-left:0.06rem solid #e4e4e4;}
+footer ul li a{ display:inline-block; width:100%; height:100%;color:#343434;}
+
+footer p{ margin:0.6rem auto ; width:100%; text-align:center; height:0.48rem; line-height:0.48rem; }
+footer p .footer_txt{ width:20%; font-size:0.48rem; color:#999; text-align:center; display: inline-block;}
+footer h6{ font-size:0.52rem; font-weight:normal; width:100%; text-align:center; }
+footer h6 b{color:#ff6600}
+footer h5{ font-size:0.24rem; font-weight:normal; width:100%;  height:0.5rem; text-align:center; }

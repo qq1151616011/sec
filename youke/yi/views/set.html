@@ -1,0 +1,47 @@
+<ion-view  view-title="优客汽车">
+    <ion-content  id="myslide2">
+        <ion-refresher pulling-icon="ion-chevron-up" on-refresh="getData()" pulling-text="正在刷新" spinner="lines" >
+
+        </ion-refresher>
+
+
+
+
+
+
+
+        <div class="list card" ng-repeat="x in data1">
+            <div class="item image left">
+
+                <img ng-src={{x.imgsrc}} />
+
+            </div>
+
+
+
+
+            <div class="item right" >
+
+
+                <a ui-sref="tabs.setnews({id:x.docid})">{{x.title}}</a>
+                <br>
+                <span >{{x.lmodify}}</span>
+                <br>
+                <span class="color" >{{x.source}}</span>
+                <span class="color2">浏览:{{x.replyCount}}</span>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </ion-content>
+</ion-view>

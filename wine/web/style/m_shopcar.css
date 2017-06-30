@@ -1,0 +1,60 @@
+/* CSS Document */
+
+header{ width:100%; height:1.76rem; background:rgba(186,15,47,1); position:fixed; z-index:100; top:0;}
+header .p_txt{color:#fff; font-size:1rem; line-height:1.76rem; text-align:center;}
+
+.satisfy{ width:100%; height:2rem; background:#fff; margin-top:1.8rem}
+.satisfy .see{/* width:1.15rem; height:0.8rem;*/ border:1px solid #bb0f2e; float:left; color:#bb0f2e;margin-top:0.5rem;margin-left:0.3rem; text-align:center; font-size:0.5rem}
+.satisfy .give{ width:87%; height:2.3rem; float:right; border-bottom:1px solid #dddcdc }
+.satisfy .give p{ width:87%; height:1rem; line-height:1.5rem; }
+.satisfy .give p span{color:#ff6600; letter-spacing:0.01rem}
+.satisfy .give .p1{color:#000;}
+.satisfy .give .p2{color:#969696;}
+
+
+
+.baby{ width:100%;}
+.baby ul li{ width:100%; height:3.5rem; position:relative; border-bottom:1px solid #dddcdc }
+.baby ul li a{ text-decoration:none;}
+.baby ul li a:hover{ color:inherit}
+.baby ul li .select{ width:0.5rem; height:0.5rem; border-radius:50%; background:#ccc;margin-top:1.7rem; margin-left:0.5rem; float:left; border:1px solid #999}
+.baby ul li .baby_img{ width:2.2rem; height:2.2rem; float:left; line-height:3.5rem; margin-left:0.5rem; margin-top:0.6rem; margin-right:0.5rem}
+.baby ul li .baby_img img{ width:100%; height:100%;}
+.baby ul li .name{width:70%; height:1.5rem; margin-top:0.2rem; padding-top:0.4rem; font-size:0.5rem}
+.baby ul li p{ color:#ff6600; font-size:0.5rem; width:70%; height:1rem; line-height:1.2rem}
+.baby ul li p span{font-size:0.6rem}
+.baby ul li b{ width:70%; height:1rem; color:#999; font-size:0.4rem; line-height:0.6rem}
+.baby ul li .number{ width:3rem; height:1.5rem;position:absolute; right:0.5rem; bottom:0.5rem}
+.baby ul li .number a.cartCountBtn{ width:0.6rem; height:1rem; color:#000; float:left;border: 1px solid #999;text-align: center;line-height:1rem; margin-right:0.2rem; margin-left:0.2rem; background:#eee; cursor:pointer;}
+.baby ul li .number input.amount{ width:1rem; height:1rem; border:1px solid #999; float:left; text-align:center; line-height:0.9px; font-size:0.6rem}
+
+
+
+
+
+.settle{ width:100%; height:1.8rem; line-height:1.8rem;border-top:1px solid #dddcdc;;padding-left:0.5rem;position:fixed; bottom:1.78rem; z-index:100; background:#fff;border-bottom:1px solid #dddcdc;}
+.settle .fox{ width:65%; height:1.8rem; line-height:0.8rem; float:left;}
+.settle input{ width:0.5rem; height:0.5rem; border-radius:50%; background:#ccc;margin-top:0.7rem; float:left; border:1px solid #666;margin-right:0.5rem}
+.settle .total1{ color:#666; font-size:0.45rem;}
+.settle .total strong{ font-size:0.55rem;}
+.settle .total2{ font-size:0.45rem; color:#999;}
+.settle .total2 b{ font-weight:normal;color:red;}
+.settle .but{ width:35%; height:1.8rem; line-height:1.8rem; float:left; text-align:center; letter-spacing:0.5rem; color:#fff; background:#e96600;border-bottom:1px solid #dddcdc;}
+
+
+
+
+
+.bot_nav{ width:100%; height:1.8rem;background: -webkit-linear-gradient(top,#f4f4f4,#e3e3e3); position:fixed; z-index:100; bottom:0;}
+.bot_nav li{ width:20%;float:left; height:1.8rem; position:relative;}
+.bot_nav li ._icon{position:absolute; top:0.2rem; left:50%; width:0.9rem; height:0.9rem; display:block; margin-left:-0.45rem}
+.bot_nav li .btn_text{ display:block; padding-top:1.1rem; text-align:center; color:#333; font-size:0.5rem}
+
+
+.bot_nav li .icon-1{background:url(../images/icon-1-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-2{background:url(../images/icon-2.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-3{background:url(../images/icon-3.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-4{background:url(../images/icon-4-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-5{background:url(../images/icon-5.png) no-repeat; background-size:0.9rem}
+
+

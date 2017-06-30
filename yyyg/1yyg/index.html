@@ -1,0 +1,1939 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="1元云购,一元云购,1元夺宝,一元夺宝,1元云购官网,一元云购官网,云购网,云购" />
+<meta name="description" content="1元云购是一种全新的购物方式，是时尚、潮流的风向标，能满足个性、年轻消费者的购物需求，由深圳市一元云购网络科技有限公司注入巨资打造的新型购物网。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>1元云购 - 惊喜无限!</title>
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="stylesheet" href="style/edslider.css">
+	<link rel="stylesheet" href="style/styles.css">
+	<link rel="stylesheet" href="style/animate-custom.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/super_slider.js" type="text/javascript"></script>
+<script src="js/Marquee.js"></script>
+<script>
+$(function(){
+	$("#header #dis1").focusin(function(){
+		$("#header #dis1").attr("value","");
+		$("#header p").css("display","none");
+		});
+	$("#header #dis1").focusout(function(){
+		$("#header #dis1").attr("value","输入 “汽车” 试试");
+		$("#header p").css("display","block");
+		});
+		
+	
+		
+	$('#marquee5').kxbdSuperMarquee({
+		isEqual:false,
+		distance:90,
+		time:2,
+		direction:'down'
+	});
+		
+		
+		
+		
+	});
+	
+	
+	
+		
+		$(window).scroll(function(){
+    var h=$(this).scrollTop();//获得滚动条距top的高度
+    //alert(h); 
+    if(h>100){
+        $("#backtop").show();
+    }else{
+        $("#backtop").hide();
+    }
+});
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ $(function(){
+        //1.楼梯什么时候显示，800px scroll--->scrollTop
+        $(window).on('scroll',function(){
+            var $scroll=$(this).scrollTop();
+            if($scroll>=500){
+                $('#loutinav').show();
+            }else{
+                $('#loutinav').hide();
+            }
+
+            //4.拖动滚轮，对应的楼梯样式进行匹配
+           
+        });
+        //2.获取每个楼梯的offset().top,点击楼梯让对应的内容模块移动到对应的位置  offset().left
+        
+        var $loutili=$('#loutinav li').not('.last');
+		 
+        $loutili.on('click',function(){
+            $(this).addClass('active').siblings('li').removeClass('active');
+            var $loutitop=$('.louti').eq($(this).index()).offset().top;
+            //获取每个楼梯的offsetTop值
+            $('html,body').animate({//$('html,body')兼容问题body属于chrome
+                scrollTop:$loutitop
+            })
+        });
+        //3.回到顶部
+		
+        $('.last').on('click',function(){
+            $('html,body').animate({//$('html,body')兼容问题body属于chrome
+                scrollTop:0
+            })
+        });
+        
+        
+
+
+    })
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<!--topbar-->
+<div id="topbar">
+  <div class="topbar">
+    <div class="top_con fl">
+      <p><a href="#">收藏</a></p>
+      <span> <i><img src="images/cctv-icon.jpg" alt="央视"></i>
+      <h6>
+      广告合作伙伴
+      <h6>
+      <span> </div>
+    <ul class="top_sec fr">
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li id="crazy"><a href="#" >我的1元云购<i class="iconfont">&#xe662;</i>
+        <div class="top_sec_sec"> <a href="#" >云购记录</a> <a href="#">获得的商品</a> <a href="#">个人设置</a> </div>
+        </a></li>
+      <li><i class="iconfont">&#xe634;</i><a href="#">手机云购</a>
+        <div class="top_sec_th"><span></span>下载1元云购App<img src="images/app-qrcode.jpg"></div>
+        <b></b></li>
+      <li><a href="#">充值</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">投诉</a></li>
+      <li id="col"><i><img src="images/service-on-2014.gif"  id="bug"></i><a href="#">在线客服</a></li>
+    </ul>
+  </div>
+</div>
+<!--header-->
+<div id="header">
+  <div class="header">
+    <div class="header_img fl"><a href="index.html"><img src="images/logo-2014.png" alt="一元云购" title="一元云购"></a></div>
+    <ul class="header_ul fl">
+      <a href="#">
+      <li class="text">已揭晓商品</li>
+      <li class="number">1</li>
+      <li class="title1">,</li>
+      <li class="number">2</li>
+      <li class="number">3</li>
+      <li class="number">4</li>
+      <li class="title1">,</li>
+      <li class="number">5</li>
+      <li class="number">6</li>
+      <li class="number">7</li>
+      <li class="text">个<i class="iconfont">&#xe601;</i></li>
+      </a>
+    </ul>
+    <div class="header_input fr">
+      <p><a href="#">汽车</a><a href="#">苹果</a><a href="#">小米</a></p>
+      <div class="header_input_text fl">
+        <input type="text" value="输入&nbsp;“汽车”&nbsp;试试" id="dis1">
+      </div>
+      <div class="header_input_submit fr"><a href="#">
+        <input type="submit" value="">
+        <i class="iconfont">&#xe602;</i></a></div>
+    </div>
+  </div>
+</div>
+<!--nav-->
+<div id="nav">
+  <div class="nav fl"><a href="#">全部商品分类 <i class="iconfont">&#xe628;</i></a></div>
+  <ul class="nav_ul fl">
+    <li class="nav_ul_li"><a href="index.html">首页</a></li>
+    <li><a href="lottery.html">最新揭晓</a></li>
+    <li><a href="limitBuy.html">限购专区</a></li>
+    <li><a href="post.html">晒单分享</li>
+    <li><a href="group.html">云购圈</a></li>
+    <li><a href="help.html">新手指南</a></li>
+  </ul>
+  <a href="cart.html">
+  <div class="nav_last fr"><i class="iconfont">&#xe606;</i><b>购物车</b></div>
+  </a> </div>
+<!--导航主体-->
+<div id="nav_main">
+  <aside class="nav_main_aside fl">
+    <dl>
+      <dt><a href="#">手机数码</a><span></span></dt>
+      <dd><a href="#">手机</a><a href="#">数码</a><a href="#">影音</a><a href="#">耳机</a></dd>
+      <dt><a href="#">电脑办公</a><span></span></dt>
+      <dd><a href="#">平板电脑</a><a href="#">笔记本<a/><a href="#">配件<a/></dd>
+      <dt><a href="#">家用电器</a><span></span></dt>
+      <dd><a href="#">大家电</a><a href="#">空调</a><a href="#">电视</a><a href="#">厨房<a/></dd>
+      <dt><a href="#">钟表首饰</a><span></span></dt>
+      <dd><a href="#">珠宝</a><a href="#">实物黄金</a><a href="#">金银条<a/></dd>
+      <dt><a href="#">食品饮料</a><span></span></dt>
+      <dd><a href="#">美食</a><a href="#">粮油</a><a href="#">饮料</a><a href="#">酒类</a></dd>
+      <dt><a href="#">化妆个护&nbsp;&nbsp;/&nbsp;&nbsp;运动户外</a><span></span></dt>
+      <dt><a href="#">家居家纺&nbsp;&nbsp;/&nbsp;&nbsp;礼品箱包</a><span></span></dt>
+      <br>
+      <dt class="nav_main_aside_dd"><a href="#">母婴&nbsp;&nbsp;/&nbsp;&nbsp;保健&nbsp;&nbsp;/&nbsp;&nbsp;健康</a><span></span></dt>
+      <dt class="nav_main_aside_dd"><a href="#">汽车&nbsp;&nbsp;/&nbsp;&nbsp;玩具乐器&nbsp;&nbsp;/&nbsp;&nbsp;服装</a><span></span></dt>
+      <dt class="nav_main_aside_dd"><a href="#">其他商品&nbsp;&nbsp;/&nbsp;&nbsp;旅行&nbsp;&nbsp;/&nbsp;&nbsp;充值</a></dt>
+    </dl>
+  </aside>
+  <!--轮播部分-->
+  <div class="nav_mainbox fl">
+    <div class="nav_mainbox_up">
+      <div class="nav_mainbox_up_lunbo fl">
+      <div class="jq22-container">
+		
+		<div class="container">
+			<ul class="mySlideshow">
+				<li class="first">
+					
+				</li>
+				<li class="second">
+					
+				</li>
+				<li class="third">
+					
+				</li>
+				<li class="fourth">
+					
+				
+			</ul>
+		</div>
+		
+	</div>
+	<script src="js/jquery.edslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			//Call plugin
+			$('.mySlideshow').edslider({
+				width : '100%',
+				height: "299",
+				progress:false,
+				interval:2000
+			});
+		});
+	</script>
+      
+      
+      </div>
+      <div class="nav_mainbox_up_r fl">
+        <div class="nav_mainbox_up_r_1"><img src="images/index-come.gif" ></div>
+        <div class="nav_mainbox_up_r_2">
+           <ul>
+           <li class="li1"><a href="#"><i></i>诚信网站</a></li>
+           <li class="li2"><a href="#"><i></i>可信网站</a></li>
+           <li class="li3"><a href="#"><i></i>电商诚信</a></li>
+           <li class="li4"><a href="#"><i></i>监督管理局</a></li>
+           <li class="li5"><a href="#"><i></i>服务保证</a></li>
+           <li class="li6"><a href="#"><i></i>更多</a></li>
+           </ul>
+        
+        
+        </div>
+      </div>
+    </div>
+    
+    <!--轮播下面部分-->
+    
+    <div class="nav_mainbox_down">
+      <div class="nav_mainbox_down_1 fl">
+        <p><a href="#">苹果（Apple）iPhone 6s Plus 32G版 4G手机</a> <span>已参与<b>353</b>人次</span></p>
+        <img src="images/20161026143404932.jpg"> </div>
+      <div class="nav_mainbox_down_2 fl">
+        <p><a href="#"> 苹果(Apple)iMac MK4<br>
+          62CH/A 27英寸一体电脑</a> <span>已参与<b>943</b>人次</span></p>
+        <img src="images/20160511140647469.jpg"> </div>
+      <div class="nav_mainbox_down_3 fl">
+        <h3><a href="#">云购公告</a></h3>
+        <ul>
+          <li><a href="#">4月起，收货地址可自行修改啦！</a></li>
+          <li><a href="#">辞旧迎新，鸡年假到！</a></li>
+          <li><a href="#">1元云购Galaxy Note7召回公告</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--自动轮播部分-->
+<div id="auto" class="louti">
+<div class="auto_up">
+<b></b>
+<h3><i></i>最新揭晓</h3>
+<h4><a href="#"><img src="images/map-icon.gif"></a></h4>
+<p><a href="#">看看附近都有谁获得了商品？</a></p>
+<div class="auto_up_r fr"><a href="#">更多</a></div>
+</div>
+<div class="auto_down">
+
+<div class="box">
+			
+			<div>
+			<dl id="roll">
+				<dd><img src="images/a1.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b> <em></em>
+				<p><a href="#">(第51225云)平安银行 招财进宝金章</a><strong>价值：￥1675.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big1">00 ：00 ： 00</big></div>
+				</dd>
+
+
+
+				<dd><img src="images/a2.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                 <p><a href="#">(第4960云) 苹果(Apple)iPhone 7 256</a><strong>价值：￥6858.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big2">00 ：00 ： 00</big></div>
+				</dd>
+
+
+				</dd>
+
+
+				<dd><img src="images/a3.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                  <p><a href="#">(第6661云) 平安银行 金鸡送福金条</a><strong>价值：￥6700.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big3">00 ：00 ： 00</big></div>
+
+				</dd>
+
+
+				<dd><img src="images/a4.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                <p><a href="#">(第28956云) 平安银行 平安金福金条 </a><strong>价值：￥16750.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big4">00 ：00 ： 00</big></div>
+
+				</dd>
+
+
+				<dd><img src="images/a5.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                 <p><a href="#">(第75669云) 维他 柠檬茶 310mlx12罐 </a><strong>价值：￥48.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big5">00 ：00 ： 00</big></div>
+ 
+
+				</dd>
+
+
+				<dd><img src="images/a6.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                <p><a href="#">(第238041云)（Apple）iPhone 6s </a><strong>价值：￥4050.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big6">00 ：00 ： 00</big></div>
+
+				</dd>
+
+
+				<dd><img src="images/a7.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+                  <p><a href="#">(第95云) 高原蓝 黑枸杞 礼盒装 100g</a><strong>价值：￥180.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big7">00 ：00 ： 00</big></div>
+
+
+
+				</dd>
+
+
+
+				<dd><img src="images/a8.jpg" class="lun"><i><img src="images/announced-2014.png"></i><b></b><em></em>
+               <p><a href="#">(第3399云) 中国黄金 梯形投资金条</a><strong>价值：￥67000.00</strong></p>
+                  <div class="frog"><small>揭晓倒计时</small><big id="big8">00 ：00 ： 00</big></div>
+
+				</dd>
+				
+			</dl>
+			</div>
+			
+		</div>	
+		<script>
+			$(".box").superSlider({
+				prevBtn: 	 ".prev",//左按钮
+				nextBtn: 	 ".next",//右按钮
+				listCont:    "#roll",//滚动列表外层
+				scrollWhere: "prev",//自动滚动方向next
+				delayTime: 	 2000,//自动轮播时间间隔
+				speed: 		 1000,//滚动速度
+				amount: 	 1,//单次滚动数量
+				showNum: 	 5,//显示数量
+				autoPlay: 	 true//自动播放
+			});
+		</script>
+        <script type="text/javascript">
+		
+
+  function showtime(s,b){
+var minute=Math.floor(s/1000/60);
+var second=Math.floor((s/1000)%60)
+var ms=Math.floor(s%100);
+
+if(minute<10){
+
+	minute="0"+minute;
+}
+if(second<10){
+
+	second="0"+second;
+}
+if(ms<10){
+
+	ms="0"+ms;
+}
+
+
+$(b).html(minute+" : "+second+" : "+ms);
+}
+showtime(120000,"#div");
+
+function move(s,c){
+	setInterval(function(){
+	s-=7;
+	if(s<0){
+     s=120000;
+	}
+	showtime(s,c);
+},10);
+}
+
+
+move(120000,"#big1");
+move(110000,"#big2");
+move(80000,"#big3");
+move(100000,"#big4");
+move(60000,"#big5");
+move(90000,"#big6");
+move(70000,"#big7");
+move(80000,"#big8");
+
+	</script>
+
+	</div>
+</div>
+
+<!--热门推荐 和竖轮播-->
+<div id="hot" class="louti">
+<div class="hot_up">
+<h3><i></i>热门推荐</h3>
+
+<div class="hot_up_r fr"><a href="#">更多</a></div>
+
+
+</div>
+<div class="hot_down">
+<div class="hot_down_l">
+<ul>
+   <li><div class="show1"></div> 
+       <img src="images/b1.jpg" class="lun">      
+       <p><a href="#">(第229252云) 苹果（Apple）iPh</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   </li>
+       
+   
+   <li><div class="show1"></div>
+   <img src="images/b2.jpg" class="lun">      
+       <p><a href="#">(第555云) 华为（HUAWEI）P10</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li><div class="show1"></div>
+   <img src="images/b3.jpg" class="lun">      
+       <p><a href="#">(第1755云) 佳能（Canon）EOS 6</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li><div class="show1"></div>
+   <img src="images/b4.jpg" class="lun">      
+       <p><a href="#">(第1784云) 苹果（Apple）AirPod</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li><div class="show1"></div>
+   <img src="images/c1.jpg" class="lun">      
+       <p><a href="#">(第2217云) 苹果（Apple）iPad 9</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   </li>
+   <li><div class="show1"></div>
+   <img src="images/c2.jpg" class="lun">      
+       <p><a href="#">(第2182云) 奥克斯（AUX）KFR-3</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   </li>
+   <li><a href="products.html"><div class="show1"></div></a>
+   <img src="images/c3.jpg" class="lun">      
+       <p><a href="#">(第179云) 苹果（Apple）MacBo</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   <li><div class="show1"></div>
+   
+   <img src="images/c4.jpg" class="lun">      
+       <p><a href="#">(第210云) 乐视 超级自行车 斯塔利</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <div class="frog">立即1元云购</div>  
+       <div class="frog1"><i class="iconfont">&#xe61b;</i></div>
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+
+
+</div>
+
+
+
+<!--竖轮播-->
+<div class="hot_down_r">
+<h3>正在云购</h3>
+<div id="marquee5">
+		<ul>
+			<li>
+					<a href="#"><h6 style="background: url('images/x1.jpg');"></h6></a>
+					<p><a href="#">YG我好想中一辆越野车</a>
+							<span><a href="#">苹果(Apple)iMac MK442<br>CH/A 21.5英寸一体电脑</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x2.jpg');"></h6></a>
+					<p><a href="#">要求不高奥迪就好YG</a>
+							<span><a href="#">苹果(Apple)iPhone7Plus<br>128G版 4G手机</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x3.jpg');"></h6></a>
+					<p><a href="#">100克夺无输掉500克</a>
+							<span><a href="#">美的(Midea)五叶遥控电风<br>扇/落地扇FS40-17ER</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x4.jpg');"></h6></a>
+					<p><a href="#">怎么回事中车吧</a>
+							<span><a href="#">外星人(Alienware)AW13<br>C-R17S13.3英寸游戏笔记</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x5.jpg');"></h6></a>
+					<p><a href="#">苦海无涯回眸一笑</a>
+							<span><a href="#">三星(Samsung)GalaxyC7<br>Pro(C7010)64GB 全网通</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x1.jpg');"></h6></a>
+					<p><a href="#">YG我好想中一辆越野车</a>
+							<span><a href="#">苹果(Apple)iMac MK442<br>CH/A 21.5英寸一体电脑</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x2.jpg');"></h6></a>
+					<p><a href="#">要求不高奥迪就好YG</a>
+							<span><a href="#">苹果(Apple)iPhone7Plus<br>128G版 4G手机</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x3.jpg');"></h6></a>
+					<p><a href="#">100克夺无输掉500克</a>
+							<span><a href="#">美的(Midea)五叶遥控电风<br>扇/落地扇FS40-17ER</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x4.jpg');"></h6></a>
+					<p><a href="#">怎么回事中车吧</a>
+							<span><a href="#">外星人(Alienware)AW13<br>C-R17S13.3英寸游戏笔记</a></span>
+					</p>
+			</li>
+			<li>
+					<a href="#"><h6 style="background: url('images/x5.jpg');"></h6></a>
+					<p><a href="#">苦海无涯回眸一笑</a>
+							<span><a href="#">三星(Samsung)GalaxyC7<br>Pro(C7010)64GB 全网通</a></span>
+					</p>
+			</li>
+			
+			
+		</ul>
+	</div>
+
+<h4> <a href="#">查看最新100条记录</a></h4>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+<!--即将揭晓-->
+<div id="will" class="louti">
+<div class="will_up">
+
+<h3><i></i>即将揭晓</h3>
+<ul class="fun">
+<a href="#"><li>手机数码</li></a>
+<a href="#"><li>电脑办公</li></a>
+<a href="#"><li>家用电器</li></a>
+<a href="#"><li>化妆个护</li></a>
+<a href="#"><li>钟表首饰</li></a>
+<a href="#"><li>其他商品</li></a>
+<a href="#"><li>全部</li></a>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="will_down">
+<big></big>
+
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/d1.jpg" class="lun">      
+       <p><a href="#">(第4233云) 小米（MIUI）车载充电器</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/d2.jpg" class="lun">      
+       <p><a href="#">(第15483云) 中国黄金 财富投资金条 Au99</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/d3.jpg" class="lun">      
+       <p><a href="#">(第60704云) 平安银行 平安福金章 Au999</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/d4.jpg" class="lun">      
+       <p><a href="#">(第29385云) 平安银行 平安金福金条 Au99</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/e1.jpg" class="lun">      
+       <p><a href="#">(第141云) 暴龙（BOLON）2017安妮海瑟</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/e2.jpg" class="lun">      
+       <p><a href="#">(第6900云) 平安银行 金鸡送福金条 Au999</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/e3.jpg" class="lun">      
+       <p><a href="#">(第1284云) 小米（MIUI）5s 4G手机 全网</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/e4.jpg" class="lun">      
+       <p><a href="#">(第256云) 洽洽 每日坚果礼盒 26g/袋x30</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/f1.jpg" class="lun">      
+       <p><a href="#">(第2286云) 苹果（Apple）iPhone 7 Plus</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/f2.jpg" class="lun">      
+       <p><a href="#">(第10047云) 盼盼 梅尼耶干蛋糕 奶香味 10</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/f3.jpg" class="lun">      
+       <p><a href="#">(第111云) 陈金星河 叠心系列 18K红白钻</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/f4.jpg" class="lun">      
+       <p><a href="#">(第1331云) 威露士（Walch）衣物家居消</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/g1.jpg" class="lun">      
+       <p><a href="#">(第1331云) 威露士（Walch）衣物家居消</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/g2.jpg" class="lun">      
+       <p><a href="#">(第29云) 凯迪拉克 XTS 2017款 28T 技术</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/g3.jpg" class="lun">      
+       <p><a href="#">(第304云) 香港威马 GRC-03101 迷你电饭</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/g4.jpg" class="lun">      
+       <p><a href="#">(第96云) 人头马（Remy Martin）天醇XO</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/h1.jpg" class="lun">      
+       <p><a href="#">(第59云) 外星人（Alienware）ALW13C-R</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/h2.jpg" class="lun">      
+       <p><a href="#">(第1782云) 派克（Parker） IM 纯黑丽雅</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/h3.jpg" class="lun">      
+       <p><a href="#">(第575云) 糖猫（teemo）儿童智能电话手</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/h4.jpg" class="lun">      
+       <p><a href="#">(第76108云) 维他 柠檬茶 310mlx12罐 整箱</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+
+</ul>
+<ul>
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   
+   
+   
+       <img src="images/i1.jpg" class="lun">      
+       <p><a href="#">(第1725云) 平安银行 平安福金章 Au9999</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+        <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"> <div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   </li>
+       
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/i2.jpg" class="lun">      
+       <p><a href="#">(第15944云) 顶诺 经典家庭牛排套餐 150g</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+      <a href="#"> <div class="frog">立即1元云购</div>  </a>
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/i3.jpg" class="lun">      
+       <p><a href="#">(第741云) 佳能（Canon）EOS 6D 单反套</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div> </a> 
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </li>
+   
+   
+   
+   
+   <li>
+   <i class="show11"></i>
+   <i class="show12"></i>
+   <i class="show13"></i>
+   <i class="show14"></i>
+   <img src="images/i4.jpg" class="lun">      
+       <p><a href="#">(第10744云) 平安银行 平安金福金条 Au99</a><strong>价值：￥1675.00</strong></p>
+       <em></em>
+       <b></b>
+       
+       <div class="ora2">
+           <h6>169<span>已参与</span></h6>
+        </div>
+        
+        <div class="gray2">
+           <h6>6949<span>总需人次</span></h6>
+         </div>
+         
+          <div class="blue2">  
+           <h6>6780<span>剩余</span></h6>
+       </div>
+       <a href="#"><div class="frog">立即1元云购</div></a>  
+       <a href="#"><div class="frog1"><i class="iconfont">&#xe61b;</i></div></a>
+  
+   
+   </li>
+
+</ul>
+
+
+
+
+
+</div>
+<div class="shop"><a href="#">查看所有商品</a></div>
+
+</div>
+
+
+
+<!-- 新品上架-->
+
+<div id="new"  class="louti">
+<div class="new_up">
+<h3><i></i>新品上架</h3>
+
+<div class="new_up_r fr"><a href="#">更多</a></div>
+
+
+
+</div>
+
+
+<div class="new_down">
+<ul>
+   <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/j1.jpg" class="lun"></a>      
+       <p><a href="#">(第131云) 小米（MIUI）红米 4X 32GB 全</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li>
+        <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/j2.jpg" class="lun"></a>      
+       <p><a href="#">(第20云) 莱克（LEXY）魔力电风扇 高端智</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li> <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/j3.jpg" class="lun"></a>      
+       <p><a href="#">(第749云) 格林盈璐 吸入式 二维仿生灭蚊器 </a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li> <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/j4.jpg" class="lun"></a>      
+       <p><a href="#">(第720云) 智米（SMARTMI）直流变频静</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li>
+  
+   
+   
+   
+   
+  
+</ul>
+<ul>
+   <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/k1.jpg" class="lun"></a>      
+       <p><a href="#">(第82云) 海尔（Haier）全自动烘干变频滚</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li>
+        <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/k2.jpg" class="lun"></a>      
+       <p><a href="#">(第6云) 西屋（Westinghouse）不锈钢破</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li> <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/k3.jpg" class="lun"></a>      
+       <p><a href="#">(第7云) 海尔（Haier）卡萨帝 变频节能四</a><strong>价值：￥1675.00</strong></p>
+       
+       
+     
+       
+   </li> <li>
+   <i class="show111"></i>
+   <i class="show121"></i>
+   <i class="show131"></i>
+   <i class="show141"></i>
+   
+       <a href="#"><img src="images/k4.jpg" class="lun"></a>      
+       <p><a href="#">(第69云) 新功（SEKO）G16 智能恒温遥控</a><strong>价值：￥1675.00</strong></p>
+   
+       
+   </li>
+
+  
+</ul>
+
+
+
+</div>
+
+
+
+</div>
+<!--晒单分享-->
+<div id="share" class="louti">
+
+<div class="share_up ">
+<h3><i></i>晒单分享</h3>
+
+<div class="share_up_r fr"><a href="#">更多</a></div>
+
+</div>
+<div class="share_down">
+
+<div class="share_down_l fl">
+<div  class="share_down_l_big"><a href="#"> <img src="images/20170414162818491.jpg"></a>
+<a href="#"><div class="share_down_l_big_div"></div></a>
+<p><a href="#">伊伊说云赢了</a>
+<span>今天 16:40</span>
+<b><a href="#">女儿的礼物</a></b></p></div>
+
+<div  class="share_down_l_small"><a href="#">钢琴玩具很漂亮，红色非常好看，包装很好，双层纸箱保护，只是快递慢了点，发货出来到手上一共差不多7天，没办法…<a> <i></i></div>
+</div>
+
+
+<div class="share_down_r fr">
+
+<ul>
+<li><a href="#"><img src="images/20170414155957982.jpg"></a><a href="#">113云哈曼水晶音响</a></li>
+<li><a href="#"><img src="images/20170413160229024.jpg"></a><a href="#">3元终于获得无线路由器</a></li>
+<li><a href="#"><img src="images/20170413145341879.jpg"></a><a href="#">乐橙监控到了</a></li>
+</ul>
+
+<ul>
+<li><a href="#"><img src="images/20170413135752189.jpg"></a><a href="#">夏季的好友</a></li>
+<li><a href="#"><img src="images/20170413132217368.jpg"></a><a href="#">感谢云友云购</a></li>
+<li><a href="#"><img src="images/20170413123640640.jpg"></a><a href="#">七匹狼皮带</a></li>
+</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+<!--底部-->
+<div id="footer">
+<div class="footer1">
+<ul>
+<li><p>新手指南</p><a href="#">了解1元云购</a><a href="#">常见问题</a><a href="#">福分等级介绍</a></li>
+<li><p>云购保障</p><a href="#">1元云购保障体系</a><a href="#">安全支付</a><a href="#">投诉建议</a></li>
+<li><p>商品配送</p><a href="#">配送费用</a><a href="#">商品验货和签收</a><a href="#">长时间未收到商品</a></li>
+<li><p>关于1元云购</p><a href="#">1元云购介绍</a><a href="#">云购公益</a><a href="#">联系我们</a></li>
+<li><p>携手1元云购</p><a href="#">商务合作</a><a href="#">邀请</a><a href="#">官方QQ圈交流</a></li>
+
+</ul>
+
+
+</div>
+<div class="footer2">
+<ul>
+<li><h2></h2><h3>下载手机客户端<i></i><p><a href="#">立即下载</a></p></h3></li>
+<li><h4><a href="#"><img src="images/1yyg-wx.png"></a></h4><h5><a href="#"><i></i></a><a href="#">关注官方微信</a><a href="#"><p></p></a></h5></li>
+<li id="now"><div class="time1"></div><div class="time2"><div class="time21">服务器时间</div><p>00</p><em>:</em><p>00</p><em>:</em><p>00</p></div></li>
+
+<li> <div class="money1"></div><div class="money2">云购公益基金<p><a href="#">￥181939965.93</a></p></div></li>
+
+<li><div class="tel1"></div><div class="tel2">服务热线 <p>4000-588-688</p> <em><a href="#"><i><img src="images/service-on-2014.gif"></i></a> <a href="#">在线客服</a></em> </div></li>
+
+</ul>
+<script>
+function showtime1(){
+var myDate = new Date();
+var hour=myDate.getHours();
+var minute=myDate.getMinutes();
+var sec=myDate.getSeconds();
+
+if(hour<10){
+
+	hour="0"+hour;
+}     
+if(minute<10){
+
+	minute="0"+minute;
+}
+if(sec<10){
+
+	sec="0"+sec;
+}
+
+
+$("#now").find("p").eq(0).html(hour);
+$("#now").find("p").eq(1).html(minute);
+$("#now").find("p").eq(2).html(sec);
+}
+setInterval(showtime1,1000);
+
+</script>
+
+
+</div>
+<div class="footer3">
+		<ul>
+        <li><a href="#"><h6 style="background:url(images/comm-2014.gif) no-repeat -199px -91px"></h6></a><p><a href="#">100%公平公正</a><span><a href="#">参与过程公开透明，用户可随时查看</a></span></p></li>
+        <li><a href="#"><h6 style="background:url(images/comm-2014.gif) no-repeat -253px -91px"></h6></a><p><a href="#">100%正品保证</a><span><a href="#">精心挑选优质商家，100%品牌正品</a></span></p></li>
+        <li><a href="#"><h6 style="background:url(images/comm-2014.gif) no-repeat -308px -91px"></h6></a><p><a href="#">全国免运费</a><span><a href="#">全国包邮（港澳台和特殊物品除外）</a></span></p></li>
+        
+         </ul>   </div>
+<div class="footer4">
+<ul class="footer4_ul1">   
+<li><a href="index.html">首页<a href="#"></a><i></i>    </li>
+<li><a href="#">关于云购</a><i></i></li>
+<li><a href="#">隐私声明</a><i></i></li>
+<li><a href="#">合作专区</a><i></i></li>
+<li><a href="#">友情链接</a><i></i></li>
+<li><a href="#">加入云购</a><i></i></li>
+<li><a href="#">联系我们</a></li>
+
+
+
+</ul>
+
+
+
+<p>Copyright © 2011 - 2017, 版权所有 1yyg.com 粤ICP备09213115号-1</p>
+
+
+<ul class="end">
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px 0px"></li></a>
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px -32px"></li></a>
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px -96px"></li></a>
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px -64px"></li></a>
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px -160px"></li></a>
+<a href="#"><li style="background:url(images/icon123.png) no-repeat 0px -192px"></li></a>
+
+</ul>
+</div>
+
+
+</div>
+<div id="fixed">
+<div class="fixed_1"></div>
+<div class="fixed_2"><i class="iconfont">&#xe606;</i><a href="#"><br>购<br>物<br>车<em>0</em></a></div>
+
+
+<div class="fixed_3"><a href="#"><i class="iconfont">&#xe62a;</i></a><p><a href="#">云购记录</a></p></div>
+
+
+<div class="fixed_4"><a href="#"><i class="iconfont">&#xe6e6;</i></a><a href="#"><p class="pic"><img src="images/app-ad.png"><i><img src="images/andriod.jpg"></i></p></a></div>
+
+<div class="fixed_5"><a href="#"><i class="iconfont">&#xe603;</i></a><p class="pic2"><a href="#"><img src="images/1yyg-wx.png">关注官方微信</a></p></div>
+
+<div class="fixed_6"><a href="#"><i class="iconfont">&#xe60e;</i></a><p><a href="#">意见反馈</a></p></div>
+
+<div class="fixed_7"><a href="#"><i class="iconfont">&#xe600;</i></a><p><a href="#">在线客服</a></p></div>
+
+<div class="fixed_8" id="top1"><a href="javascript:;"><i class="iconfont">&#xe605;</i></a><p><a href="#">返回顶部</a></p></div>
+
+
+
+</div>
+
+
+
+<div id="loutinav" >
+        <ul>
+            <li class=""><span>最新揭晓</span> </li>
+            <li class="active"><span>热门推荐</span> </li>
+            <li><span>即将揭晓</span> </li>
+            <li><span>新品上架</span> </li>
+            <li><span>晒单分享</span> </li>
+           
+            <li class="last">返回顶部</li>
+        </ul>
+    </div>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	$("#top1").click(function(){
+		  $("html,body").animate({scrollTop:0}, 500);
+		
+		}); 
+			
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

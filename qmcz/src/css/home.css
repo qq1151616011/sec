@@ -1,0 +1,350 @@
+
+
+.carousel-inner{
+       width: 100%;
+      height:596px;
+}
+.carousel-indicators li.mar1{
+    margin: 5px;
+}
+.hotpro{
+    padding:54px 82px ;
+    border-bottom:1px solid #999;
+    height: 490px;
+    width: 100%;
+    background: #f8f9fb;
+}
+.hotpro_l{float: left;
+width: 909px;
+height: 100%;
+    padding-top:16px ;
+    padding-right:50px;
+color:#bbb;
+}
+.hotpro_l .hot_s{
+    width: 100%;
+    height: 60px;
+
+}
+.hotpro_l .hot_s h2{
+    float: left;
+    width: 25%;
+    margin: 0;
+color:#333;
+
+}
+.hotpro_l .hot_s a{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    color:#bbb;
+    text-decoration: none;
+
+}
+.hotpro_l .hot_d{
+    width: 100%;
+    height: 250px;
+
+}
+
+.hotpro_l .hot_d .hot_d_l{
+    width: 320px;
+    height:250px;
+    float: left;
+
+background: #333;
+    overflow:hidden;
+
+}
+.hotpro_l .hot_d .hot_d_l img{
+    width: 120%;
+    height:100%;
+
+}
+
+.hotpro_l .hot_d .hot_d_r{
+    width: 539px;
+    height:250px;
+    float: right;
+    padding-left:55px;
+
+}
+.hotpro_l .hot_d .hot_d_r h3{
+    margin: 0;
+    color:#333;
+    text-align: left;
+}
+.hotpro_l .hot_d .hot_d_r h3 em{
+    position: relative;
+    left: -11px;
+    font-style:normal;
+}
+.hotpro_l .hot_d .hot_d_r h3 span{
+    display: block;
+    font-size:16px;
+    color:#bbb;
+    margin-top:10px ;
+    margin-bottom: 20px;
+
+}
+
+.hotpro_l .hot_d .hot_d_r p{
+    height:77px;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+
+}
+.hotpro_l .hot_d .hot_d_r .txt{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 10px;
+}
+.hotpro_l .hot_d .hot_d_r .txt em{
+    font-style: normal;
+    display: inline-block;
+    margin: 0px 15px 0px 7px;
+}
+.hotpro_l .hot_d .hot_d_r .progress{height: 10px;}
+
+.hotpro_l .hot_d .hot_d_r .progress .progress-bar{
+    background: #ff6600;
+}
+.hotpro_l .hot_d .hot_d_r .txt1{
+    margin-top:10px;
+    width: 100%;
+}
+.hotpro_l .hot_d .hot_d_r .txt1 h6{
+    float: left;
+    color:#333;
+    font-size:20px;
+    font-weight: 600;
+    text-align: left;
+margin: 0px 15px 0px 0px;
+
+}
+.hotpro_l .hot_d .hot_d_r .txt1 h6 span{
+    display: block;
+    color:#bbb;
+    font-size:14px;
+    margin-top: 7px;
+    font-weight: normal;
+
+
+}
+
+
+
+.hotpro_r{float: right;
+width: 127px;
+height: 100%;
+border-left:1px solid #999;
+
+}
+.o_ul{float:left;
+      list-style: none;
+    padding: 0px;
+}
+.o_ul li{
+    padding: 9px 9px 9px 40px;
+border-left: 3px solid #fff;
+    box-sizing: border-box;
+
+
+}
+.o_ul li.colo{
+    border-left: 3px solid #ff6600;
+
+}
+.o_ul li a{text-decoration: none;
+color:#333;
+
+
+}
+.o_ul li a.color{
+    color:#ff6600;
+
+}
+
+.tv{
+    width: 100%;
+    height:640px;
+    padding: 47px 80px 0px;
+    border-bottom:1px solid #aaa;
+
+
+}
+.tv .tv_u{
+    height: 80px;
+    width: 100%;
+
+}
+.tv .tv_u h2{
+    float: left;
+    margin: 0;
+    color:#333;
+    margin-top:10px;
+}
+.tv .tv_u a{
+    float: right;
+    color:#bbb;
+    display: block;
+    padding: 8px ;
+    border: 1px solid #bbb;
+    text-decoration: none;
+    border-radius:3px;
+}
+
+.tv .tv_d{
+    width: 100%;
+    height: 454px;
+}
+.tv .tv_d .tv_d_l{
+    width:319px;
+    height:454px;
+    box-sizing: border-box;
+    float: left;
+    margin-right:41px;
+
+    border-radius: 5px;
+}
+.tv .tv_d .tv_d_l:last-child{
+    margin: 0;
+}
+.tv .tv_d .tv_d_l .tv_d_i{
+    width: 100%;
+    height: 233px;
+    background: #333;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.tv .tv_d .tv_d_l .tv_d_i img{
+    width: 120%;
+    height: 100%;
+}
+
+.tv .tv_d .tv_d_l .tv_d_txt{
+    color:#bbb;
+    padding:10px 15px 0px 15px;
+    font-size:12px;
+
+    border: 1px solid #e4e4e4;
+    border-top:none;
+    height: 221px;
+    width: 100%;
+    border-radius: 5px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+}
+
+
+.tv .tv_d .tv_d_l .tv_d_txt h3{
+    margin: 0;
+    color:#333;
+    text-align: left;
+    font-size:16px ;
+    font-weight: 600;
+
+}
+.tv .tv_d .tv_d_l .tv_d_txt h3 em{
+    position: relative;
+    left: 0px;
+    font-style:normal;
+}
+.tv .tv_d .tv_d_l .tv_d_txt h3 span{
+    display: block;
+    font-size:14px;
+    color:#bbb;
+    margin-top:5px ;
+    margin-bottom: 10px;
+    font-weight: normal;
+
+}
+
+.tv .tv_d .tv_d_l .tv_d_txt p{
+    height:70px;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    color:#bbb;
+    padding: 0px 10px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+
+}
+.tv .tv_d .tv_d_l .tv_d_txt .txt{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 10px;
+}
+.tv .tv_d .tv_d_l .tv_d_txt .txt em{
+    font-style: normal;
+    display: inline-block;
+    margin: 0px 15px 0px 7px;
+}
+.tv .tv_d .tv_d_l .tv_d_txt .progress{height: 10px;}
+
+.tv .tv_d .tv_d_l .tv_d_txt .progress .progress-bar{
+    background: #ff6600;
+}
+.tv .tv_d>div .tv_d_txt .txt1{
+    margin-top:-13px;
+    width: 100%;
+}
+.tv .tv_d .tv_d_l .tv_d_txt .txt1 h6{
+    float: left;
+    color:#333;
+    font-size:14px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px 15px 0px 0px;
+
+}
+.tv .tv_d .tv_d_l .tv_d_txt .txt1 h6 span{
+    display: block;
+    color:#bbb;
+    font-size:12px;
+    margin-top: 5px;
+    font-weight: normal;
+
+
+}
+
+
+.cpt{
+    height: 326px;
+    width: 100%;
+    padding: 68px 80px 0px ;
+}
+.cpt h3{
+    margin: 0px;
+    color:#333;
+    margin-bottom: 60px;
+
+}
+.cpt .cpt_img{
+    wdith:100%;
+    height:82px;
+
+}
+.cpt .cpt_img p{
+    height: 84px;
+    width: 189px;
+    box-sizing: border-box;
+
+    float: left;
+    margin-right:23px;
+
+}
+.cpt .cpt_img p img{
+   border:1px solid #333;
+}
+
+.cpt .cpt_img p:last-child{
+    margin: 0;
+}
+

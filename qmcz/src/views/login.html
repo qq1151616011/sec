@@ -1,0 +1,96 @@
+<div class="register" style="height: 600px">
+    <div class="register_m" style="height: 455px">
+
+        <div class="register_m_u" style="height: 397px">
+            <h4>登录</h4>
+            <form action="#" name="myForm" novalidate id="myform">
+                <div class="form-group">
+
+                    <input class="form-control"
+                           type="text" name="user" ng-model="user" required ng-pattern="/^1[3578][0-9]{9}$/" placeholder="请输入您的手机号码">
+                    <span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                          <span ng-show="myForm.user.$error.required">您输入的的号码不能为空!</span>
+                          <span ng-show="myForm.user.$error.pattern">您输入的的号码有误请检查!</span>
+                </span>
+                </div>
+
+
+
+
+
+                <div class="form-group" style="position: relative">
+                    <input type="password" class="form-control"  placeholder="请输入您的密码"  name="psd1"  ng-model="psd1"
+                           required ng-minlength="6">
+                    <a href="javascript:;" style="position: absolute;right:0px;top:49px">忘记密码</a>
+                    <span style="color:red" ng-show="myForm.psd1.$dirty && myForm.psd1.$invalid">
+                          <span ng-show="myForm.psd1.$error.required">您输入的的密码不能为空！</span>
+                          <span ng-show="myForm.psd1.$error.minlength">请输入大于6位的密码！</span>
+
+                </span>
+                    <span ng-show="val" style="color:red">账号或者密码错误</span>
+                </div>
+
+
+
+
+
+                <button type="button" class="btn btn-default btn-block"
+                        ng-class="{'disabled':myForm.$invalid ||check==false}"
+                        style="background:#2ade73;height: 40px; color:#fff" ng-click="res(myForm.$invalid ||check==false)"
+                        id="submit"
+                >登录</button>
+                <div class="checkbox" style="color:#bbb">
+                    <label>
+                        <input type="checkbox" id="checkbox" ng-model="check">  记住我
+
+                    </label>
+                </div>
+
+
+            </form>
+
+
+
+            <div class="r_txt">
+                <i></i>
+                <span>第三方登录</span>
+                <i></i>
+
+            </div>
+
+            <div class="th3">
+                <div class="th3r">
+                    <img src="image/weixin.jpg" height="22" width="27"/></div>
+                <div class="th3r">
+                    <img src="image/qq.jpg" height="22" width="27"/>
+                </div>
+                <div class="th3r">
+                    <img src="image/xinlang.jpg" height="22" width="27"/>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="register_m_d">
+            新用户<a href="javascript:;">立即注册</a>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

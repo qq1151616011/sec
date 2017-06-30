@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="Description" content="" />
+    <meta name="keywords" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+
+ <title>会员注册_1元云购</title>
+ <link rel="stylesheet" type="text/css" href="style/base.css">
+ <link rel="stylesheet" type="text/css" href="style/register.css">
+ <script src="js/jquery-1.8.3.min.js"></script>
+ <script>
+ $(function(){
+	 
+	 $("#input1").focusin(function(){	
+		 if($(this).val()=="手机号/邮箱地址"){
+				$(this).val("");
+				
+			};
+			
+		$("#input1").css("border","1px solid #ff6600");
+		$("#pic1").css({
+			"background-position":" -25px 0px"
+			});
+		
+		});
+	$("#input1").focusout(function(){
+		$("#input1").css("border","1px solid #ddd");
+		$("#pic1").css({"background-position":"0px 0px"});
+		
+		var input_val=$(this).val();
+			var str="";
+			if(input_val==""){
+				$(this).val("手机号/邮箱地址");
+			}else{
+				for(var i=0;i<input_val.length;i++){
+					if(input_val[i]!=" "){
+						str+=input_val[i];	
+					}
+				}
+				if(str==""){
+					$(this).val("手机号/邮箱地址");
+				}
+			}
+		
+		
+		});
+		
+		
+		
+		
+		
+		
+	 
+	 
+	 
+	  $("#input2").focusin(function(){
+		$("#input2").css("border","1px solid #ff6600");
+		$("#pic2").css({
+			"background-position":" -25px -25px"
+			});
+			
+			if($("#input2").val()=="设置登录密码"){
+				$("#input2").val("");
+			}
+			
+		});
+	$("#input2").focusout(function(){
+		$("#input2").css("border","1px solid #ddd");
+		$("#pic2").css({"background-position":"0px -25px"});
+		
+		var input_val2=$(this).val();
+			var str2="";
+			if(input_val2==""){
+				$(this).val("设置登录密码");
+			}else{
+				for(var i=0;i<input_val2.length;i++){
+					if(input_val2[i]!=" "){
+						str2+=input_val2[i];	
+					}
+				}
+				if(str2==""){
+					$(this).val("设置登录密码");
+				}
+			}
+		
+		
+		});
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  $("#input22").focusin(function(){
+		$("#input22").css("border","1px solid #ff6600");
+		$("#pic3").css({
+			"background-position":" -25px -25px"
+			});
+			
+			
+		if($(this).val()=="确认密码"){
+				$(this).val("");
+			}	
+			
+			
+			
+			
+		});
+	$("#input22").focusout(function(){
+		$("#input22").css("border","1px solid #ddd");
+		$("#pic3").css({"background-position":"0px -25px"});
+		
+		
+	 
+	 var input_val22=$(this).val();
+			var str22="";
+			console.log(input_val22);
+			if(input_val22==""){
+				$(this).val("确认密码");
+			}else{
+				for(var i=0;i<input_val22.length;i++){
+					if(input_val22[i]!=" "){
+						str22+=input_val22[i];	
+					}
+				}
+				if(str22==""){
+					$(this).val("确认密码");
+				}
+			}
+	 
+	 
+	 });
+	 
+	 });
+ 
+ 
+ 
+ 
+ 
+ </script>
+ 
+</head>
+
+<body>
+
+
+<!--头部-->
+<header>
+<div class="header_img fl"><a href="index.html"><img src="images/index.png"></a></div>
+<p class="header_text fr">已有账号？<a href="login.html">立即登录</a></p>
+</header>
+
+
+
+
+<!--主体-->
+<article>
+<div class="article_box">
+ <div class="article_box_input ">
+ <div class="pic1" id="pic1"></div>
+ <div class="pic2" id="pic2"></div>
+ <div class="pic3" id="pic3"></div>
+   <p>新用户注册</p>
+ <div class="input1" ><input type="text" value="手机号/邮箱地址" id="input1"> </div>
+ <div class="input2" ><input type="text" value="设置登录密码" id="input2">  </div>
+ <div class="input22" ><input type="text" value="确认密码" id="input22">  </div>
+<script>
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<div class="fff"> <s>>></s><a href="#">请按住滑块 , 拖动到最右边</a></div>
+
+ 
+<div class="input3"> <a href="#"><input type="submit"  value="同意协议并注册">  </a></div>
+
+
+
+
+ <div class="bottom"><a href="#">《1元云购互助购物协议》</a></div>
+ </div>
+
+
+</div>
+
+
+</article>
+<!--底部-->
+<footer>
+            <div class="footer_up">  
+               <a href="index.html ">首页</a><i></i>
+               <a href="#">关于云购</a><i></i>
+               <a href="#">隐私声明</a><i></i>
+               <a href="#">合作专区</a><i></i>
+               <a href="#">友情链接</a><i></i>
+               <a href="#">加入云购</a><i></i>
+               <a href="#">联系我们</a><i></i>
+            
+               
+            </div>
+
+<p>Copyright &copy; 2011 - 2017, 版权所有 1yyg.com 粤ICP备09213115号-1</p>
+<h5></h5>
+</footer>
+
+
+</body>
+</html>

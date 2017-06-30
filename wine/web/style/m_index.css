@@ -1,0 +1,93 @@
+/* CSS Document */
+
+header{ width:100%; height:1.76rem; background:rgba(186,15,47,1); position:fixed; z-index:100; top:0;}
+
+header .header_left{ width:1.2rem; height:1.2rem; font-size:0.66rem; line-height:1.2rem; background:url(../images/sprites-1.png) no-repeat; background-size:1.2rem; position:absolute; left:0.5rem; top:0.3rem;}
+
+header .header_search{ width:84%;position:absolute; top:0.3rem; right:0.2rem;}
+
+header .header_search input{ width:75%; height:1.2rem; border-radius:0.2rem; font-size:0.55rem; background:url(../images/sprites-3.png) no-repeat 5px; background-size:0.8rem; background-color:#fff; padding-left:1.2rem;}
+header .header_search input::-webkit-input-placeholder{color:#999;}
+header .header_search button{ width:auto; height:auto; border:0; background:0; color:#fff; font-size:0.7rem;line-height:1rem; cursor:pointer; padding-left:0.8rem; padding-top:0.1rem}
+
+/* banner*/
+.banner{ width:100%;background:rgba(153,102,0,1); position:relative; z-index:10; padding-top:1.2rem}
+	.slideBox{ position:relative; overflow:hidden; margin:10px auto;  max-width:15rem;/* 设置焦点图最大宽度 */ }
+	.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0.1rem; z-index:1;transform:translate(-50%,0);  left:50%;}
+	.slideBox .hd li{ display:inline-block; width:0.4rem; height:0.4rem; -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%; text-indent:-9999px; overflow:hidden; margin:0 0.12rem;/* box-shadow:0 1px 4px #666;*/ background:0; border:0;}
+	.slideBox .hd li.on{ background:0;}
+	
+	.slideBox .bd{position:relative; z-index:0;}
+	.slideBox .bd li{position:relative; text-align:center;}
+	.slideBox .bd img{vertical-align:top; width:100%; /*图片宽度100%，达到自适应效果*/}
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  } /* 去掉链接触摸高亮*/
+
+/* banner end*/
+
+.box-n{ width:100%;border-bottom:1px solid #dcdcdc; }
+	.nav-menu{ width:90%; margin:0 auto;display:block; height:4rem;}
+	.nav-menu li{ width:25%; float:left;}
+	.nav-menu li img{ width:1.6rem; height:1.6rem; margin-left:0.8rem; margin-top:0.8rem;margin-bottom:10px;}
+	.nav-menu li span{ font-size:100%; height:0.6rem; line-height:0.56rem; display:block; text-align:center;}
+	.nav-menu li a{ color:#aeaec5;}
+
+
+
+.box-wine{ width:100%; border-bottom:2px solid #dcdcdc; height:9rem}
+.box-wine h2{font-weight:500;margin-left:0.3rem; height:2rem; line-height:2rem}
+	.wine-m{ width:90%;display:block; margin:0 auto;}
+	.wine-m li{ width:50%; height:2.8rem; display:block; float:left; margin-bottom:0.5rem}
+	.wine-m li img{ width:2.8rem; height:100%; display:block; float:left;}
+	.wine-m li span{ font-size:0.64rem; color:#6d6d6d; margin-left:0.32rem; height:1rem; line-height:1rem;}
+	
+	
+.box{ width:100%; height:9rem; border-bottom:2px solid #dcdcdc;}
+.box h2{font-weight:500;margin-left:0.3rem; height:2rem; line-height:2rem;width:90%; margin:0 auto;}
+.box h2 .h_r{ float:right; color:#999;}
+	.b-img{ width:90%; margin:0 auto;}
+	.b-img img{ width:100%; vertical-align:top;}
+
+
+/*值得买*/
+.buy{ width:100%; border-bottom:1px solid #dcdcdc;}
+.buy h3{font-weight:500;margin-left:0.3rem; height:1.2rem; line-height:1.2rem;width:90%; margin:0.3rem auto; border-bottom:1px solid #dcdcdc;}
+.buy .Worth{ width:90%; margin:0.5rem auto; display:block;border-bottom:1px solid #dcdcdc;}
+.buy .Worth dt{ float:left; clear:left; margin-bottom:0.2rem}
+.buy .Worth dt img{ width:4.8rem; height:7rem}
+.buy .Worth dd{ width:62%; margin-left:38%; overflow:hidden; position:relative}
+.buy .Worth dd .pname{ font-size:100%; width:100%; height:1rem; line-height:0.5rem;}
+.buy .Worth dd .price{ color:#ba0e2d; padding:0.6rem 0; font-size:0.7rem}
+.buy .Worth dd .pmb{ color:#999; font-size:0.6rem; display:block; padding:0.6rem 0;}
+.buy .Worth dd .cr{color:#cc0000; padding-top:0.5rem}
+.buy .Worth dd .gc{ width:1.5rem; height:1.5rem; position:absolute; bottom:0.2rem; right:0.1rem; background:url(../images/gou-2.png) no-repeat; background-size:1.5rem}
+
+/*值得买 end*/
+.bf{ height:8rem}
+
+.footer{ width:100%; padding-top:0.5rem; padding-bottom:0.8rem; background:#eaeaea}
+.footer p{ font-size:0.64rem; height:0.7rem; line-height:.7rem; text-align:center; color:#666;}
+.footer p a{ color:#00F;}
+
+/*底部导航*/
+
+.bot_nav{ width:100%; height:1.8rem;background: -webkit-linear-gradient(top,#f4f4f4,#e3e3e3); position:fixed; z-index:100; bottom:0;}
+.bot_nav li{ width:20%;float:left; height:1.8rem; position:relative;}
+.bot_nav li ._icon{position:absolute; top:0.2rem; left:50%; width:0.9rem; height:0.9rem; display:block; margin-left:-0.45rem}
+.bot_nav li .btn_text{ display:block; padding-top:1.1rem; text-align:center; coolor:#333; font-size:0.5rem}
+
+
+.bot_nav li .icon-1{background:url(../images/icon-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-2{background:url(../images/icon-2.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-3{background:url(../images/icon-3.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-4{background:url(../images/icon-4.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-5{background:url(../images/icon-5.png) no-repeat; background-size:0.9rem}
+
+
+.bot_nav{}
+
+
+/*底部导航 end*/
+
+
+
+

@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>写合同_悦合同_专业合同服务商</title>
+    <script src="js/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="icon" href="images/index.ico">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+         header .nav > li > a{
+
+             display: inline-block;
+             font-size: 18px;
+
+         }
+         header .nav > li{
+
+             text-align: right;
+             margin-left:10px;
+             margin-right:10px;
+             border-bottom: 1px solid #e4e4e4;
+         }
+        header .nav > li:last-child{
+            margin-right:10px;
+
+        }
+         header #logo{
+             width: 120px;
+             height: 45px;
+             background:url("images/yue-sprit001.png")no-repeat 0px -80px;
+              display:inline-block;
+             margin: 15px 20px 15px 50px;
+         }
+         header #logo2{
+            display: none;
+         }
+        header .navbar-default .navbar-toggle{
+            margin-top: 20px;
+
+        }
+        header .navbar-default .navbar-toggle:hover{
+
+
+            background: #22aaff;
+
+        }
+        header .navbar-default .navbar-toggle:hover .icon-bar{
+            background:#fff;
+
+        }
+
+       header .navbar-default{
+           background: transparent;
+           border:none;
+       }
+
+         .navrow{display: none}
+
+        header .navbar-default .navbar-nav > li > a{
+            color:#333;
+            border-radius:5px ;
+        }
+        header .navbar-default .navbar-nav > li > a:hover{
+            color:#fff;
+            background: #22aaff;
+
+        }
+
+
+        section{text-align: left}
+        section .page1 .carousel-indicators li{
+               border-radius: 0px;
+               width: 20px;
+               height:6px;
+            box-sizing: border-box;
+            background: #fff;
+            border: 1px solid #F1A179;
+
+        }
+        section .page1 .carousel-indicators li.active{
+            background:#F1A179;
+        }
+        section h3{margin:100px auto 70px;}
+        section .page1 #myslide .carousel-indicators{
+              bottom: -15%;
+        }
+
+        section .page2 {
+            background: rgba(0,0,0,0.1);
+            padding-top: 50px ;
+        }
+        section .page2  h4{
+            font-size: 30px;
+            margin-bottom: 20px;
+
+        }
+        section .page2  h6{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        section .page2 .col-md-9{
+            margin-bottom: 20px;
+        }
+        section .page2 .col-md-9 h1{
+            float: left;
+        }
+        section .page2 .col-md-9 h6{
+            float: right;
+            margin-top: 35px;
+        }
+        section .page2 .col-md-9 h6 a{
+            text-decoration: none;
+        }
+        section .page2 .col-md-9.hover:hover{
+            background: #fff;
+
+        }
+        section .page2 .col-md-3{
+            margin-bottom: 20px;
+        }
+        section .page2 .col-md-3 .inside{
+            background: #fff;
+
+            padding-top: 20px;
+        }
+        section .page2 .col-md-3 p{
+            padding-left:20px ;
+            border-left:15px solid #22aaff ;
+            font-size: 18px;
+        }
+        section .page2 .col-md-3 .inside a{
+              text-decoration: none;
+             display: inline-block;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            width: 100%;
+
+
+        }
+        section .page2 .col-md-9 .weight{
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        section .page2 .col-md-9 p{
+
+            margin: 5px 0px;
+        }
+        section .page2 .col-md-9 s{
+            font-size:24px;
+            color:#999;
+        }
+        section .page2 .col-md-9 em{
+
+            font-size: 26px;
+            color:#ff6600
+
+        }
+
+        section .page2 .form-group{
+          margin-top: 20px;
+        }
+        section .page2 .end1{
+            margin: 10px 0px;
+        }
+        section .page2 .end1 a{
+            text-decoration: none;
+
+
+        }
+        section .page2 .end2{
+            margin: 10px 0px;
+        }
+        section .page2 .end2 a{
+            text-decoration: none;
+
+        }
+        section .page2 .end2 a span{
+            color:red
+        }
+        section .page2 .end2:hover a span{
+           text-decoration: underline;
+        }
+        section .page3{
+            padding-bottom: 20px;
+        }
+        section .page3 .bg{background: #fff;}
+        section .page3 .col-md-9.title p{
+            margin: 20px 0px;
+            border-left:15px solid #22aaff ;
+            font-size: 22px;
+            color:#999;
+            line-height: 24px;
+            padding-left: 20px;
+
+        }
+        section .page3 .col-md-9 .txt{
+            margin-left: 30px;
+              padding-left: 50px;
+              position: relative;
+        }
+        section .page3 .col-md-9 .txt .txtcontent1{
+           margin-bottom:3px;
+
+
+        }
+        section .page3 .col-md-9 .txt .txtcontent2{
+            margin-bottom:10px;
+            color:#999;
+
+        }
+        section .page3 .col-md-9 .txt .txtcontent2 i{
+            color:yellow;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        section .page3 .col-md-9 .txt .txtcontent3{
+            margin-bottom:10px;
+            color:#333;
+            font-size: 18px;
+
+        }
+        section .page3 .col-md-9 .txt .outside{
+            position: absolute;
+            top:20px;
+           left: -20px;
+            font-size: 22px;
+            border: #fff 5px solid;
+            border-radius: 50%;
+            background:#ddd;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 33px;
+            cursor: pointer;
+            color:#aaa;
+        }
+        section .page3 .col-md-9 .txt .txtcontent4{
+                margin-top: 30px;
+                margin-bottom:5px;
+                color:#111;
+            font-size: 16px;
+
+        }
+        section .page3 .col-md-9 .txt .txtcontent4 span{
+            color:red;
+            cursor: pointer;
+        }
+        section .page3 .col-md-9 .txt .txtcontent5{
+
+            color:#999;
+            font-size: 12px;
+
+        }
+        section .page3 .col-md-9 .siblings1{display: none}
+        section .page3 .col-md-9  .sho{
+             display: block;
+        }
+
+        #myModalLabel1{
+            margin: 20px 0px 0px;
+            text-align: center;
+        }
+
+        #myModalLabel{
+           text-indent: 10px;
+            text-align: center;
+        }
+        #myModalLabel2{
+            text-indent: 10px;
+            text-align: center;
+        }
+        #myModalLabel3{
+            margin: 20px 0px 0px;
+            text-align: center;
+        }
+        .modal-body{
+            padding: 0px;
+            border: none;
+        }
+        .form-inline .form-group{
+            width: 100%;
+        }
+        .form-inline .form-control1{
+            border:none;
+            outline: none;
+           height: 45px;
+            box-shadow:none;
+         width: 100%;
+
+
+        }
+         #lable1{
+
+             color:red;
+             float: right;
+
+             display: none;
+             position: absolute;
+             top:13px;
+             right:20px;
+         }
+        #lable3{
+            position: absolute;
+            top:13px;
+            right:20px;
+            color:red;
+            float: right;
+
+            display: none;
+        }
+        #lable2{
+            position: absolute;
+            top:13px;
+            right:20px;
+            color:red;
+            float: right;
+
+            display: none;
+        }
+        #lable4{
+            position: absolute;
+            top:13px;
+            right:20px;
+            color:red;
+            float: right;
+
+            display: none;
+        }
+        #lable5{
+            position: absolute;
+            top:13px;
+            right:90px;
+            color:red;
+            float: right;
+
+            display: none;
+        }
+        .all{
+            padding:0px 10px 35px;
+            width: 100%;
+
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+
+
+        .border{
+            border-top:1px solid  #eee;
+
+        }
+        .all1{
+            float: left;
+            margin-top: 15px;
+            padding-left:10px ;
+        }
+        #img1{
+            position: absolute;
+            top:5px;
+            right:0px;
+            display: inline-block;
+            height: 40px;
+        }
+        #btn2,#btn3,#btn4,#btn5,#btn6{
+            position: relative;
+        }
+
+        footer{
+            background: #bbb;
+            padding-bottom: 10px;
+            padding-top:40px ;
+        }
+        footer .container{
+            position: relative;
+        }
+        footer a{
+            display: block;
+            text-decoration: none;
+            color:#666;
+            margin-bottom:5px ;
+        }
+        footer a:hover{
+            text-decoration: none;
+
+        }
+        footer h6{ font-size: 20px;
+                   color:#444;
+        }
+
+        footer p{
+            color:#666;
+
+
+        }
+        footer .footerlast{
+            position: relative;
+
+            text-align: center;
+        }
+        footer .col-md-2{margin-bottom: 30px;}
+
+
+
+
+        .outfloat{
+            width: 58px;
+            height: 58px;
+            position: fixed;
+            bottom:100px;
+            right: 20px;
+            padding: 10px;
+            background: #3890ff;
+            border-radius:50% ;
+            background: url("images/111111.png")no-repeat;
+            background-size: 100% 100%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .outfloat:hover{
+            background: #fff;
+            border: 1px solid #0392d6;
+        }
+        .outfloat .endtxt{
+            text-align: center;
+            line-height: 18px;
+            display: none;
+        }
+        .outfloat:hover  .endtxt{
+            display: block;
+        }
+        .outfloat .endfloat{
+            width: 150px;
+            height: 200px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #0392d6;
+            position: absolute;
+            left:-152px;
+            top:-55px;
+            text-align: center;
+            display: none;
+
+
+
+        }
+        .outfloat:hover .endfloat{
+
+            display: block;
+        }
+        .outfloat .endfloat img{
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+
+
+        }
+        .outfloat .endfloat p span{
+            font-weight: 600;
+        }
+
+        .outfloat1{
+            width: 58px;
+            height: 58px;
+            position: fixed;
+            bottom:160px;
+            right: 20px;
+            padding: 10px;
+            background: #0392d6;
+            border-radius:50% ;
+           text-align: center;
+            line-height: 30px;
+            font-size: 40px;
+            color:#fff;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .outfloat1:hover{
+            background: #fff;
+            border: 1px solid #0392d6;
+            color:#0392d6;
+
+        }
+        .margin1{
+            margin: 20px 0px 0px;
+        }
+        section .page2    .margin2{
+             margin-bottom: 20px;
+            width: 31%;
+        }
+        section .page3{
+            background: rgba(0,0,0,0.1);
+        }
+
+
+
+        @media (min-width: 768px) {
+              .navrow{
+                  display: inline-block;
+                  width: 2px;
+                  height:25px;
+                  background: #22aaff;
+                 position: absolute;
+                right: -10px;
+                bottom:12px;
+              }
+
+            header .navbar-default .navbar-collapse ul{
+                 margin-top:30px ;
+             }
+             header #logo{
+                 width: 200px;
+                 height: 74px;
+                 background:url("images/yue-sprit001.png")no-repeat 0px 0px;
+                 display:inline-block;
+                 margin: 20px 20px 15px 30px;
+
+             }
+             header #logo2{
+                 display: none;
+
+             }
+            header .nav > li{
+
+                border:none;
+
+            }
+            header .nav > li:last-child{
+                margin-right:30px;
+
+            }
+            footer .footerlast{
+                position: relative;
+
+                text-align: center;
+
+            }
+            section .page1 #myslide .carousel-indicators{
+                bottom: 10px;
+            }
+
+        }
+        @media (min-width: 1000px){
+            header #logo2{
+                font-size: 24px;
+                position: relative;
+                top:18px;
+                right:-210px;
+                color:#35C1EC;
+                font-weight: 100;
+                display: block;
+            }
+            footer .footerlast{
+                position: absolute;
+                bottom: 0px;
+                right:0px;
+                text-align: right;
+            }
+        }
+
+        </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+           <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mymeun">
+               <i class="icon-bar"></i>
+               <i class="icon-bar"></i>
+               <i class="icon-bar"></i>
+
+           </button>
+            <a href="index.HTML" id="logo" class="navbar-brand"><span id="logo2">专业合同服务商</span></a>
+
+        </div>
+        <div class="navbar-collapse collapse mymeun">
+           <ul class="nav navbar-nav navbar-right">
+               <li><a href="report.HTML">悦读</a><a href="event.HTML">悦活动</a><a href="xiehetong.HTML">写合同</a><a href="gaihetong.HTML">审合同</a> <span class="navrow"></span></li>
+
+               <li><a href="#"  data-target="#myModal" data-toggle="modal">登录</a><a href="#" data-target="#myModal1" data-toggle="modal">注册</a></li>
+
+               <!-- Modal -->
+               <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                               <h4 class="modal-title" id="myModalLabel2">免费加入悦合同</h4>
+                               <h5 class="modal-title" id="myModalLabel3">专业合同服务商</h5>
+                           </div>
+                           <div class="modal-body">
+                               <form class="form-inline">
+                                   <div class="form-group" id="btn4">
+                                       <input type="text" class="form-control form-control1" id="exampleInputName5" placeholder="邮箱或手机号">
+                                       <label for="exampleInputName5" id="lable3">请输入邮箱/手机号/昵称</label>
+
+                                   </div>
+                               </form>
+
+                               <form class="form-inline border">
+                                   <div class="form-group" id="btn6">
+                                       <input type="text" class="form-control form-control1" id="exampleInputName7" placeholder="验证码">
+                                       <img src="images/zzz.png" id="img1"/>
+                                       <label for="exampleInputName7" id="lable5">验证码出错</label>
+                                   </div>
+                               </form>
+
+
+                               <form class="form-inline border">
+                                   <div class="form-group" id="btn5">
+                                       <input type="text" class="form-control form-control1" id="exampleInputName6" placeholder="设置密码（不少于6位）">
+                                       <label for="exampleInputName6" id="lable4">请输入密码</label>
+                                   </div>
+                               </form>
+
+                           </div>
+
+                           <div class="modal-footer">
+                               <div class="all"><div class="left"><input type="checkbox" id="btn10"> 我已阅读并同意<a href="javascript:;">《悦合同服务协议》</a></div></div>
+                               <button type="button" class="btn btn-primary btn-block disabled" id="click2">注册</button>
+                               <div class="all1"> <a href="#"  id="btn22">已有账号？直接登陆</a> </div>
+                           </div>
+                           <script>
+
+                               $("#btn4").focusout(function () {
+                                   if(!$("#exampleInputName5").val()){
+                                       $("#lable3").show()
+                                   }
+                               });
+                               $("#btn6").focusout(function () {
+                                   if(!$("#exampleInputName7").val()){
+                                       $("#lable5").show()
+                                   }
+                               });
+                               $("#btn5").focusout(function () {
+                                   if(!$("#exampleInputName6").val()){
+                                       $("#lable4").show()
+                                   }
+                               });
+
+
+
+                               $("#btn4").click(function () {
+
+                                   $("#lable3").hide();
+                               });
+
+                               $("#btn6").click(function () {
+                                   $("#lable5").hide();
+                               });
+                               $("#btn5").click(function () {
+                                   $("#lable4").hide();
+                               });
+                               $("#btn10").click(function () {
+                                   if($(this).prop("checked")){
+                                       $("#click2").removeClass("disabled");
+                                   }else{
+                                       $("#click2").addClass("disabled");
+                                   }
+                               });
+                               $("#btn22").click(function () {
+                                   $('#myModal1').modal('hide');
+                                   $('#myModal').modal('show');
+
+                               });
+
+
+
+                           </script>
+
+                       </div>
+
+                   </div>
+               </div>
+
+               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                               <h4 class="modal-title" id="myModalLabel">登录悦合同</h4>
+                               <h5 class="modal-title" id="myModalLabel1">专业合同服务商</h5>
+                           </div>
+                           <div class="modal-body">
+                               <form class="form-inline">
+                                   <div class="form-group" id="btn2">
+                                       <input type="text" class="form-control form-control1" id="exampleInputName3" placeholder="邮箱/手机号/昵称">
+                                       <label for="exampleInputName3" id="lable1">请输入邮箱/手机号/昵称</label>
+                                   </div>
+                               </form>
+
+                               <form class="form-inline border">
+                                   <div class="form-group" id="btn3">
+                                       <input type="text" class="form-control form-control1" id="exampleInputName4" placeholder="密码">
+                                       <label for="exampleInputName3" id="lable2">请输入密码</label>
+                                   </div>
+                               </form>
+                           </div>
+
+                           <div class="modal-footer">
+                              <div class="all"><div class="left"><input type="checkbox">下次自动登陆</div><div class="right"><a href="javascript:;">忘记密码？</a></div></div>
+                               <button type="button" class="btn btn-primary btn-block" id="click1">登录</button>
+                               <div class="all1">还没有悦合同账号？ <a href="#" id="btn11">立即注册</a> </div>
+                           </div>
+                           <script>
+
+                             $("#click1").click(function () {
+                                 if(!$("#exampleInputName3").val()){
+                                     $("#lable1").show()
+                                 }
+                                 if(!$("#exampleInputName4").val()){
+                                     $("#lable2").show()
+                                 }
+
+                             });
+                             $("#btn2").click(function () {
+
+                                 $("#lable1").hide();
+                             });
+
+                             $("#btn3").click(function () {
+                                 $("#lable2").hide();
+                             });
+
+                             $("#btn11").click(function () {
+                                 $('#myModal').modal('hide');
+                                 $('#myModal1').modal('show');
+
+                             });
+
+                           </script>
+
+                       </div>
+
+                   </div>
+               </div>
+           </ul>
+
+        </div>
+
+
+    </nav>
+
+
+</header>
+<section>
+    <div class="page1">
+
+        <div id="myslide" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators" >
+             <li data-target="#myslide" data-slide-to="0" class="active"></li>
+                <li data-target="#myslide" data-slide-to="1" ></li>
+                <li data-target="#myslide" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                 <div class="item active">
+                     <img src="images/20170505011.jpg" />
+                     <div class="carousel-caption">
+
+
+                     </div>
+                 </div>
+
+
+                 <div class="item">
+                    <img src="images/20170505012.jpg" />
+                     <div class="carousel-caption">
+
+                     </div>
+                 </div>
+
+
+                 <div class="item">
+                     <img src="images/002.jpg" />
+                     <div class="carousel-caption">
+
+
+                     </div>
+                 </div>
+
+
+            </div>
+
+         <a class="left carousel-control" href="#myslide" data-slide="prev">
+
+                 <span class=" glyphicon glyphicon-chevron-left"></span>
+
+         </a>
+
+            <a class="right carousel-control" href="#myslide" data-slide="next">
+
+                <span class=" glyphicon glyphicon-chevron-right"></span>
+
+            </a>
+
+
+
+
+
+        </div>
+      <script>
+          $(".carousel").carousel({
+
+             interval:2000
+
+          });
+
+
+      </script>
+    </div>
+    <div class="page2">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-9 col-xs-12 ">
+                     <h1>写合同</h1><h6><a href="#"><i class="glyphicon glyphicon-hand-right"></i>写合同说明？</a></h6>
+                 </div>
+
+                <div class="col-md-9 col-xs-12  hover">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">1. 请描述您合同的主要内容 （限制300个字）</label>
+                            <textarea class="form-control" id="exampleInputEmail1" rows="5" placeholder="清晰描写合同的背景，当事人等要素"></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">上传附件（doc、docx、pdf格式）</label>
+                            <input type="file" id="exampleInputFile">
+
+                        </div>
+
+
+
+                    </form>
+
+
+                </div>
+                <div class="col-md-3 col-xs-12 ">
+                    <div class="inside">
+                    <p>我的合同</p>
+                    <a href="#">我的所有合同></a>
+                </div>
+                </div>
+                <div class="col-md-9 col-xs-12 hover">
+                    <div class="margin1">2. 联系方式 （请填写联系方式，以便在合同编写过程中能及时沟通。）</div>
+                    <form class="form-inline">
+                        <div class="form-group margin2">
+                            <label for="exampleInputName2">姓名</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="">
+                        </div>
+                        <div class="form-group margin2">
+                            <label for="exampleInputEmail2">手机</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="">
+                        </div>
+                        <div class="form-group margin2">
+                            <label for="exampleInputEmail21">微信号</label>
+                            <input type="email" class="form-control" id="exampleInputEmail21" placeholder="">
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="col-md-9 col-xs-12 hover">
+                      <div class="price">
+
+                          <div class="weight">费用：</div>
+                          <p>原价:<s> 1000 </s>元</p>
+                          <p>限时价:<em> 198 </em>元</p>
+
+
+                      </div>
+                </div>
+                <div class="col-md-9 col-xs-12 ">
+                    <div class="end1"><a href="#"><i class="glyphicon glyphicon-hand-right"></i> 悦合同服务定价标准</a></div>
+
+                    <div class="end2"><input type="checkbox" id="check"> <a href="#">已认真阅读并同意<span>《服务协议》</span></a></div>
+                    <button type="submit" class="btn btn-primary disabled" id="btn1">提交</button>
+                    <script>
+                        $("#check").click(function () {
+
+                            if($(this).prop("checked")){
+                                     $("#btn1").removeClass("disabled");
+                            }else{
+                                $("#btn1").addClass("disabled");
+                            }
+                        });
+
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="page3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-9 title col-xs-12 bg">
+                     <p>服务评价</p>
+                    <div class="siblings1 sho">
+
+
+                    <div class="txt well">
+                        <div class="outside" >
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                        <div class="txtcontent1">139*****218</div>
+                        <div class="txtcontent2">
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            <i class="glyphicon glyphicon-star"></i>
+                            2017年5月25日
+                        </div>
+                        <div class="txtcontent3">感谢你们的专业而且快速的对应！</div>
+                    </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">138*****227</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2017年5月5日
+                            </div>
+                            <div class="txtcontent3">和你们聊的时候，知识挺专业的。你们可以在网站上搞一些课程，让大家了解多点知识。那就更好啦</div>
+                        </div>
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">137*****750</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2017年4月23日
+                            </div>
+                            <div class="txtcontent3">帮忙写了一份公司章程。挺专业的。我第一次听到公司可以设立反收购条款，涨知识了。点赞一个给你们。辛苦了。</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">ad**********@li-bang.com</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2017年4月16日
+                            </div>
+                            <div class="txtcontent3">下次有需求，再找你们合作</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">jn***@gzjiangnan.com.cn</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2017年4月16日
+                            </div>
+                            <div class="txtcontent3">我付款后，当天有客服和我联系需求，反应及时。合同的话可以，客服主动和我解释了很多法律规定，我觉得这个好。付费写份合同，还上了一堂法律课。</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">137*****163</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2017年4月3日
+                            </div>
+                            <div class="txtcontent3">好评，速度快且精准！</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">神的孩子</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年12月15日
+                            </div>
+                            <div class="txtcontent3">听了悦合同的线上微课后才知道原来合同这么重要，公司创业初期，还是谨慎一点，决定以后都来找悦合同写合同！</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">gz*****@public.guangzhou.gd.cn</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年12月12日
+                            </div>
+                            <div class="txtcontent3">欣慰，遇到了好人，好服务！</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">ch***@supreme-elec.com</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年12月11日
+                            </div>
+                            <div class="txtcontent3">之前的699消费肉疼，现在实惠多了</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">zh*******@austin.com.cn</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年12月9日
+                            </div>
+                            <div class="txtcontent3">这服务可以有</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">***@gdzhiyou.com</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月28日
+                            </div>
+                            <div class="txtcontent3">客户一直改合作，合同写好后还让他们改了好多次，服务态度太好了</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">136*****401</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月24日
+                            </div>
+                            <div class="txtcontent3">我想知道你们为什么能这么快写出一份合同来，是不是有模板</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">年轻就是资本</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月24日
+                            </div>
+                            <div class="txtcontent3">你们问我的一些合同问题，我当时就觉得你们行，你们给合同我，恩，不错还能无限次修改。</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">**@dfacan.com</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月23日
+                            </div>
+                            <div class="txtcontent3">3小时写好合同给我，你咋能这么快</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">蓝轩</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月19日
+                            </div>
+                            <div class="txtcontent3">我一直在微课群里听你们的讲座、你们的坚持感动、普法之路不易哪、你们写合同的水平高</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">年轻就是资本</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月15日
+                            </div>
+                            <div class="txtcontent3">负责任的妹纸团队</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">139*****002</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月13日
+                            </div>
+                            <div class="txtcontent3">你们长得年轻哦，还真看不出5年以上律师经验。真心看不出</div>
+                            <div class="txtcontent4"><span>悦合同回复：</span>实战经验已有八年以上了。</div>
+                            <div class="txtcontent5">2016年11月18日</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">133*****828</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月7日
+                            </div>
+                            <div class="txtcontent3">就是你们这家了。专业！感谢杨老师。</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">12*******@qq.com</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月3日
+                            </div>
+                            <div class="txtcontent3">客户急着要谈成合作，快急死了，朋友推荐我来悦合同，打了电话过去说明紧急情况，律师立马先给我写合同，两三小时就给我，合作也成功谈成了！太感谢了！</div>
+                        </div>
+
+
+
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">139*****002</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年11月3日
+                            </div>
+                            <div class="txtcontent3">老师，你讲的合同如何防范风险的课程还没讲完呢，我在等着呀</div>
+                            <div class="txtcontent4"><span>悦合同回复：</span>耐心等待中~~~~~努力研发课程中~~~~~~</div>
+                            <div class="txtcontent5">2016年12月14日</div>
+                        </div>
+
+
+                    </div>
+                    <div class="siblings1">
+                        <div class="txt well">
+                            <div class="outside" >
+                                <i class="glyphicon glyphicon-user"></i>
+                            </div>
+                            <div class="txtcontent1">睡梦中的雄师</div>
+                            <div class="txtcontent2">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                2016年8月15日
+                            </div>
+                            <div class="txtcontent3">原本也不知道这家写合同的水平会怎样，看是专做合同这块的，不像其他家的那么杂七杂八，就本着试试看购买了这家的写合同服务。果然不负我，服务态度好，专业！</div>
+                            <div class="txtcontent4"><span>悦合同回复：</span>我们的宗旨是：做精做专。</div>
+                            <div class="txtcontent5">2016年10月8日</div>
+                        </div>
+                    </div>
+
+
+
+                                <div class=" col-lg-3 col-lg-offset-6  col-sm-3 col-sm-offset-6 col-xs-7">
+
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination navbar-right" id="card">
+                                            <li id="first"  class="disabled">
+                                                <a href="javascript:;" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="active siblings11"><a href="javascript:;" >1</a></li>
+                                            <li class="siblings11"><a href="javascript:;">2</a></li>
+
+                                            <li id="last">
+                                                <a href="javascript:;" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+
+                                <div class=" col-lg-3 margin1 col-sm-3 col-xs-5">
+
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                                            <div class="input-group">
+
+                                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="跳转到...">
+                                                <div class="input-group-addon">GO</div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <script>
+
+                                    $(".pagination li").click(function () {
+                                        $(this).addClass("active").siblings().removeClass("active");
+                                        if($(this).find("a").html()=="1"){
+                                            $("#first").addClass("disabled");
+                                            $("#last").removeClass("disabled");
+                                        }else if($(this).find("a").html()=="2"){
+                                            $("#last").addClass("disabled");
+                                            $("#first").removeClass("disabled");
+                                        }
+
+
+                                    });
+                                    $("#first").click(function () {
+                                        $("#first").addClass("disabled");
+                                        $(" .siblings11").eq(0).addClass("active").siblings().removeClass("active");
+                                        $(".siblings1").eq(0).addClass("sho").siblings().removeClass("sho");
+                                        $("#last").removeClass("disabled");
+                                    });
+                                    $("#last").click(function () {
+                                        $("#last").addClass("disabled");
+                                        $(" .siblings11").eq(1).addClass("active").siblings().removeClass("active");
+                                        $(".siblings1").eq(1).addClass("sho").siblings().removeClass("sho");
+                                        $("#first").removeClass("disabled");
+                                    });
+                                    $(" .siblings11").click(function () {
+
+
+                                        $(".siblings1").eq($(this).index()-1).addClass("sho").siblings().removeClass("sho");
+
+
+                                    });
+
+
+                                </script>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h6>产品</h6>
+                <a href="#">写合同</a>
+                <a href="#">审合同</a>
+                <a href="#">合同顾问</a>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h6>政策</h6>
+                <a href="#"> 服务协议</a>
+                <a href="#">常见问题</a>
+                <a href="#">会员政策</a>
+                <a href="#">会员权益</a>
+                <a href="#">定价标准</a>
+        </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h6>公司</h6>
+                <a href="#">品牌故事</a>
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">加入我们</a>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <h6>资源</h6>
+                <a href="#">网站地图</a>
+                <a href="#">意见反馈</a>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 footerlast">
+                <p>© 悦合同</p>
+                <p> www.yuehetong.com</p>
+                <p>粤ICP备16004471号-1</p>
+                <p>版权所有 © 广州诚心网络科技有限公司</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</footer>
+
+<div  class="outfloat">
+    <div class="endtxt">
+    微信<br>
+    客服
+</div>
+
+    <div class="endfloat">
+
+        <img src="images/rnav-wx1.jpg"/>
+        <p>微信扫码咨询</p>
+        <p>请备注"<span>合同服务</span>"</p>
+    </div>
+</div>
+<div class="outfloat1" id="backtop">
+  <i class="glyphicon glyphicon-chevron-up"></i>
+</div>
+<script>
+    $(window).scroll(function () {
+      var k= $(window).scrollTop();
+        if(k<600){
+
+            $("#backtop").hide();
+        }else{
+
+            $("#backtop").show();
+        }
+
+
+
+    })
+
+
+
+
+    $("#backtop").click(function () {
+        $('html,body').stop().animate({scrollTop: '0px'}, 1500);
+
+
+
+    });
+
+
+
+</script>
+</body>
+</html>

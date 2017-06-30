@@ -1,0 +1,116 @@
+/* CSS Document */
+header{ width:100%; height:1.66rem; background:rgba(255,102,0,1); position:fixed; z-index:11;}
+header .header_left{ position:absolute; width:1.5rem;height:1rem; top:0.3rem;left:0.5rem;}
+header .header_left img{ width:1.5rem;height:1rem;}
+header .header_search{ width:100%; height:1.2rem; padding-left:2.5rem; padding-right:3.3rem; margin-top:0.23rem; }
+header .header_search input{width:100%; height:1.2rem;background:rgba(255,255,255,0.6); border-radius:0.2rem; font-size:0.6rem;color:white; border:1px:solid rgba(255,255,255,0.2); padding-left:1.2rem;}
+header .header_search input::-webkit-input-placeholder{color:white}
+header .header_search .search_btn{ position:absolute;top:0.42rem;left:2.8rem; font-size:0.8rem; color:white;} 
+header i{height:1.2rem; width:1.2rem;  position:absolute;  top:0.25rem; text-align:center; line-height:1.2rem;  }
+header i.user1{right:0.3rem;font-size:0.8rem;}
+header i.user1 a{color:white;}
+header i.user2{right:1.6rem;font-size:0.8rem;}
+header i.user2 a{color:white;}
+
+#backtop{height:1.64rem; width:1.64rem; text-align:center; line-height:1.64rem; background:rgba(0,0,0,0.3);color:white; position:fixed; right:0.2rem; bottom:2.3rem; cursor:pointer; border-radius:0.2rem; display:none}
+#backtop i{font-size:0.8rem; display:inline-block; transform:rotate(180deg)}
+
+
+.index{height:1.66rem; width:100%;}
+/*nav*/
+nav{ box-sizing:border-box; width:100%; height:1.64rem; border-bottom:1px solid #e4e4e4; margin-top:0.30rem; }
+nav ul{margin:0px 2%; }
+nav ul li{float:left; font-size:0.52rem;width:19%;height:1.04rem; text-align:center; margin-right:1%; color:#333; border-radius:0.52rem;line-height:1.04rem;}
+nav ul li a{ color:#333; }
+nav ul li a:hover{color:#333;}
+nav ul:last-child{margin-right:0.5%; }
+nav ul li.style_li{ background:#ff6600;color:white;}
+nav ul li.style_li a{color:white; }
+
+.list{width:100%; cursor:pointer; overflow:hidden; position:relative;}
+
+.list .main li small{ display:block ; position:absolute; top:0.6rem; right:0; width:0.04rem;height:0.4rem; background:#e4e4e4; }
+.list .main{width:11rem;height:1.56rem; float:left; text-align:center; line-height:1.56rem;}
+.list .main li{width:25%;height:1.56rem; box-sizing:border-box;float:left; border-bottom:0.02rem solid #e4e4e4;color:#8e8c8e;position:relative;}
+.list .list1{width:4rem;height:1.56rem; box-sizing:border-box;float:left;line-height:1.56rem;text-align:center;border-bottom:0.02rem solid #e4e4e4;color:#8e8c8e;}
+.list .list1 i{ font-size:0.6rem;}
+.s1{ border-bottom:#ff6600 0.04rem solid!important;color:#ff6600!important; }
+.show{ display:block!important;}
+
+.hide{width:100%; height:7.5rem; clear:both; position:absolute; top:1.56rem; left:0; z-index:8; display:none; background:#fff;}
+.hide ul{width:100%; box-shadow:0rem 0.04rem 0.16rem #e4e4e4; height:7.5rem;}
+.hide ul li{width:33.33%;height:1.5rem; box-sizing:border-box; float:left; border-bottom:0.02rem #e4e4e4 solid; border-right:0.02rem #e4e4e4 solid; text-align:center; line-height:1.5rem; color:#ababab; font-size:0.56rem; }
+.hide ul li:nth-child(3n){ border-right:none;}
+.hide ul li.b1{border-bottom:none;}
+
+.list .goods{width:100%;height:25.4rem; overflow:hidden}
+.list .goods .goods1{ display:none;}
+.list .goods ul{width:100%;height:24rem; }
+.list .goods ul li{width:100%;height:4.8rem; box-sizing:border-box; border-bottom:0.02rem solid #e4e4e4; box-sizing:border-box; padding:0.6rem 0.32rem 0.5rem;}
+.list .goods ul li big{height:3.4rem; width:3.4rem; float:left; display:block ;border:0.02rem solid #e4e4e4; box-sizing:content-box}
+.list .goods ul li big img{height:3.4rem; width:3.4rem;border:none }
+.list .goods ul li .right{ float:right; width:10.72rem; height:3.4rem;}
+
+.list .goods ul li .right s{ display:block; text-decoration:none; font-size:0.6rem; color:#3d403d; width:100%; height:1.6rem;margin-bottom:0.2rem;}
+.list .goods ul li .right .right_d{ width:100%; height:1.6rem;}
+
+.list .goods ul li .right .right_d .fff{ float:left;width:80%; height:1.6rem; float:left}
+
+.list .goods ul li .right .right_d i{ display:block; float:right;width:15%; height:1.6rem; text-align:center; line-height:1.6rem; font-size:1rem; background:#ff6600; color:#fff; border-radius:0.2rem;}
+
+.list .goods ul li .right .right_d em{width:100%; height:0.2rem; background:#e4e4e4; position: relative; border-radius:0.2rem; display:block; margin-top:0.1rem;}
+.list .goods ul li .right .right_d em b{width:20%; height:0.2rem; background:#ff6600; position:absolute; top:0;left:0; border-radius:0.2rem; z-index:7;display:block}
+
+
+
+
+
+
+.list .goods ul li .right .right_d .color{ width:100%; height:1rem; margin-top:0.1rem;margin-top:0.1rem;}
+
+.list .goods ul li .right .right_d .color span{ display:block;}
+.list .goods ul li .right .right_d .color .left{ float:left; width:30%;}
+.list .goods ul li .right .right_d .color .middle{ float:left; width:40%;}
+.list .goods ul li .right .right_d .color .right{ float:left; width:30%;}
+.list .goods ul li .right .right_d .color p{color:#aeadad; font-size:0.40rem; height:1rem;line-height:0.6rem;}
+
+
+.list .goods ul li .right .right_d .color .left{ text-align:left;}
+.list .goods ul li .right .right_d .color .left span{ color:#ff6600}
+
+.list .goods ul li .right .right_d .color .middle{ text-align:center;}
+.list .goods ul li .right .right_d .color .middle span{ color:#777}
+
+.list .goods ul li .right .right_d .color .right{ text-align:right;}
+.list .goods ul li .right .right_d .color .right span{ color:#22aaff}
+
+
+
+
+.list .goods h3{width:100%;height:1.4rem; line-height:1.4rem; text-align:center; font-size:0.5rem;font-weight:normal; color:#afacaf; background:#f7f7f7; box-shadow:0rem 0.06rem 0.15rem #e4e4e4 inset;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+
+
+footer ul{ border-bottom:0.06rem solid #e4e4e4; border-top:0.06rem solid #e4e4e4; width:100%; height:1.36rem; box-sizing:border-box;}
+footer ul li{ font-size:0.46rem; float:left; width:25%; text-align:center;height:1.30rem; line-height:1.30rem; border-right:0.06rem solid #e4e4e4; box-sizing:border-box; }
+footer ul:first-child{border-left:0.06rem solid #e4e4e4;}
+footer ul li a{ display:inline-block; width:100%; height:100%;color:#343434;}
+
+footer p{ margin:0.6rem auto ; width:100%; text-align:center; height:0.48rem; line-height:0.48rem; }
+footer p .footer_txt{ width:20%; font-size:0.48rem; color:#999; text-align:center; display: inline-block;}
+footer h6{ font-size:0.52rem; font-weight:normal; width:100%; text-align:center; }
+footer h6 b{color:#ff6600}
+footer h5{ font-size:0.24rem; font-weight:normal; width:100%;  height:0.5rem; text-align:center; }

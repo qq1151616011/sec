@@ -1,0 +1,115 @@
+/*顶部*/
+
+#backtop{height:1.64rem; width:1.64rem; text-align:center; line-height:1.64rem; background:rgba(0,0,0,0.3);color:white; position:fixed; right:0.2rem; bottom:2.3rem; cursor:pointer; border-radius:0.2rem; display:none;}
+#backtop i{font-size:0.8rem; display:inline-block; transform:rotate(180deg)}
+.m_layout .nav{width:100%;height:1.84rem; line-height:1.84rem; background:#ff6600; font-size:0.68rem; text-align:center; color:white; position: relative; border-bottom:0.04rem solid #c95e10;}
+.m_layout .nav .nav1{ position:absolute; top:0.26rem; left:0.98rem; border:0.04rem solid #e44e00; border-left:none; width:1.56rem;height:1.30rem; line-height:1.20rem; font-size:0.48rem; border-bottom-right-radius:0.2rem;border-top-right-radius:0.2rem; text-align:left; text-indent:0.1rem ; }
+.m_layout .nav .nav1 span{width:0.66rem;height:1.3rem; display:block; position:absolute; left:-0.6rem; top:-0.02rem; background:url(../images/mainIcon.png) no-repeat -0.02rem -6.53rem; background-size:3.2rem 12.14rem;}
+.m_layout .nav .nav1 a{ color:white; display:block; width:100%; height:100%}
+.m_layout .nav .nav2{ position:absolute; top:0.22rem; right:0.26rem; border:0.02rem solid #e44e00; width:1.56rem;height:1.36rem; line-height:1.36rem; font-size:0.48rem; border-radius:0.2rem; text-align:center;}
+.m_layout .nav .nav2 i{ font-size:0.9rem;}
+.m_layout .nav .nav2 a{ color:white; display:block; width:100%; height:100%}
+/*中部*/
+.list { width:100%; height:1.46rem; background:#e7e7e7; box-shadow:0px 3px 3px #d2cfd2; font-size:0.56rem;}
+
+.list ul li{width:33.33%; height:1.46rem; text-align:center; line-height:1.46rem; box-sizing:border-box; border-right:0.04rem solid #d2cfd2; float:left;}
+
+.list ul li a{ display:inline-block; width:100%; height:100%;color:#474947;}
+.list ul li:nth-child(1){ background:#f7f7f7; color:#ff6600;}
+.list ul li:nth-child(1) a{  color:#ff6600;}
+.list ul li:nth-child(3){border-right:none }
+
+.run {width:100%; height:5.8rem; background:rgba(247,247,247,1) }
+
+
+
+
+.txt{width:100%; height:8.4rem; box-shadow:0px -3px 3px #d2cfd2; box-sizing:border-box; padding:0.6rem 0.4rem 0rem;}
+.txt p{ font-size:0.6rem; line-height:0.84rem;color:#616361;}
+.txt p span{color:#f43938;}
+.txt small{color:#979497; font-size:0.48rem; margin-top:0.2rem; display:block}
+
+.txt em{width:100%; height:0.4rem; background:#e4e4e4; position: relative; border-radius:0.4rem; display:block; margin-top:0.4rem;}
+.txt em b{width:20%; height:0.4rem; background:#ff6600; position:absolute; top:0;left:0; border-radius:0.2rem; z-index:10;display:block}
+
+
+
+
+
+
+.txt .color{ width:100%; height:1rem; margin-top:0.1rem;margin-top:0.2rem;}
+
+.txt .color span{ display:block;}
+.txt .color .left{ float:left; width:30%;}
+.txt .color .middle{ float:left; width:40%;}
+.txt .color .right{ float:left; width:30%;}
+.txt .color p{color:#aeadad; font-size:0.44rem; height:1rem;line-height:0.6rem;}
+
+
+.txt .color .left{ text-align:left;}
+.txt .color .left span{ color:#ff6600}
+
+.txt .color .middle{ text-align:center;}
+.txt .color .middle span{ color:#777}
+
+.txt .color .right{ text-align:right;}
+.txt .color .right span{ color:#22aaff}
+
+
+.shop{width:100%; height:1.4rem; margin-top:0.7rem; text-align:center; line-height:1.4rem; font-size:0.6rem}
+.shop a{ display:inline-block; width:100%; height:100%; color:white}
+.shop .shop1{width:49%; height:1.4rem; box-sizing:border-box; background:#ff6600; border-radius:0.2rem; float:left;} .shop .shop2{width:49%; height:1.4rem; box-sizing:border-box; background:#ffb221; border-radius:0.2rem; float:right;}
+
+
+
+.box{width:100%;height:7.2rem; background:#f7f7f7; box-shadow:0px 3px 3px #d2cfd2 inset; padding:0.6rem 0.3rem 0rem;}
+.box div{ width:100%; height:1.6rem; box-sizing:border-box; border:0.04rem solid #e6e7e6; border-radius:0.2rem; margin-bottom:0.5rem; background:white; padding:0.4rem;}
+
+.box div a{ font-size:0.56rem; display:inline-block; width:90%; height:100%; float:left; color:#474947}
+.box div a small{ font-size:0.4rem;color:#bbb;}
+.box div a em{ font-style:normal; color:#ff6600;}
+
+
+.box div i{ display:inline-block; float:right; transform:rotate(180deg); font-size:0.6rem;}
+
+
+
+
+
+.picScroll-left{ width:15rem;  overflow:hidden; position:relative;    }
+		.picScroll-left .hd{  height:0.6rem; background:rgba(247,247,247,1);   position: relative;  }
+		.picScroll-left .hd .prev{ display:block;  width:5rem; height:4.6rem; float:left; background: rgba(247,247,247,0.8);position: absolute; top:0.6rem;z-index: 10;cursor:pointer;}
+		.picScroll-left .hd .next{ display:block;  width:4.9rem; height:4.6rem; float:right; background: black;position: absolute; top:0.6rem;z-index: 10; right:0px;background: rgba(247,247,247,0.8); cursor:pointer;}
+		
+		
+		
+		
+		.picScroll-left .bd{width: 15rem; height:4.6rem;overflow:hidden; position: relative;}
+		.picScroll-left .bd ul{ overflow:hidden; zoom:1;  position: relative;width:15rem; background:white}
+		.picScroll-left .bd ul li{ margin:0 0.2rem; float:left; display:inline; overflow:hidden; text-align:center;  }
+		.picScroll-left .bd ul li .pic{ text-align:center; }
+		.picScroll-left .bd ul li .pic img{ width:4.6rem; height:4.6rem; display:block; }
+		
+		.picScroll-left .bd ul li .title{ line-height:0.48rem;   }
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+
+footer ul{ border-bottom:0.06rem solid #e4e4e4; border-top:0.06rem solid #e4e4e4; width:100%; height:1.36rem; box-sizing:border-box;}
+footer ul li{ font-size:0.46rem; float:left; width:25%; text-align:center;height:1.30rem; line-height:1.30rem; border-right:0.06rem solid #e4e4e4; box-sizing:border-box; }
+footer ul:first-child{border-left:0.06rem solid #e4e4e4;}
+footer ul li a{ display:inline-block; width:100%; height:100%;color:#343434;}
+
+footer p{ margin:0.6rem auto ; width:100%; text-align:center; height:0.48rem; line-height:0.48rem;  }
+footer p .footer_txt{ width:20%; font-size:0.48rem; color:#999; text-align:center; display: inline-block;}
+footer h6{ font-size:0.52rem; font-weight:normal; width:100%; text-align:center; }
+footer h6 b{color:#ff6600}
+footer h5{ font-size:0.24rem; font-weight:normal; width:100%;  height:0.5rem; text-align:center; }

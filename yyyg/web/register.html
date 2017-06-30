@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+ <title>注册 - 1元云购触屏版</title>
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/register.css">
+<link rel="shortcut icon" href="favicon.ico" >
+<script src="js/device.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+
+<!--总体开始-->
+
+<div class="m_layout">
+
+
+        <!--  顶部-->
+        <div class="nav">
+          <div class="nav1"><a href="index.html"><span></span>返回</a></div>
+        注册
+          <div class="nav2"><a href="index.html"><i class="iconfont">&#xe620;</i></a>  </div> 
+        
+        
+        </div>
+          <!--  中部-->
+          
+          
+     <div class="inputmain">
+     <input type="text"  class="input1" value="请输入您的手机号码" id="input1">  <i class="iconfont input3">&#xe634;</i>
+     <input type="submit" class="input2" value="下一步" id="input2" disabled="disabled">
+     
+     
+     <b id="input4"></b>
+     <span>我已阅读并同意<a href="#">1元云购用户服务协议</a></span>
+     <script>
+     $("#input4").click(function(){
+		    
+				if($(this).css("background-image")=="none"){
+				$(this).css({
+					"background":"url(images/setIcon.png) -0.02rem -0.34rem no-repeat",
+					"background-size":"3.2rem 10rem"
+					});
+					$("#input2").removeAttr("disabled");
+				    $("#input2").css("background","#ff6600");
+				}else{
+				$(this).css("background","none");
+				$("#input2").attr("disabled","disabled");
+				 $("#input2").css("background","#ddd");
+				}
+			
+ 
+		 
+		 });
+     
+     
+     	$("#input1").focusin(function(){
+			if($(this).val()=="请输入您的手机号码"){
+				$(this).val("");
+			}
+		});
+		
+		$("#input1").focusout(function(){
+			var input_val=$(this).val();
+			var str="";
+			if(input_val==""){
+				$(this).val("请输入您的手机号码");
+			}else{
+				for(var i=0;i<input_val.length;i++){
+					if(input_val[i]!=" "){
+						str+=input_val[i];	
+					}
+				}
+				if(str==""){
+					$(this).val("请输入您的手机号码");
+				}
+			}
+		})
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     </script>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     </div>     
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!--  底部-->
+        <footer>
+        
+            <ul>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="#">关于我们</a></li>
+              <li><a href="login.html">登录</a></li>
+              <li><a href="register.html">注册</a></li>
+            </ul>
+        
+              <p>
+              <a href="#" class="footer_txt">触屏版</a>
+              <a href="#" class="footer_txt">电脑版</a>
+              <a href="#" class="footer_txt">下载客户端</a>
+              </p>
+        
+        <h6>客服热线<b>4000-588-688</b>粤ICP备09215113号-1</h6>
+        
+        <h5></h5>
+        
+        
+        
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

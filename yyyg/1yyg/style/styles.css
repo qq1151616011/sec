@@ -1,0 +1,55 @@
+
+
+
+.container{
+	max-width: 709px;
+	overflow:hidden;
+	
+}
+
+.mySlideshow .animated{
+	position:absolute;
+}
+.first{
+	background:url("../images/first.jpg") center no-repeat;
+}
+.first a,
+.first img{
+	display:block;
+}
+.first a{
+	top:80px;
+	left:39%;
+	margin-left:-165px;
+}
+.first div{
+	font-family:'Open Sans Condensed', sans-serif;
+	font-size:50px;
+	bottom:80px;
+	left:39%;
+	width:320px;
+	text-align:center;
+	margin-left:-160px;
+}
+.second{
+	background:url("../images/second.png") center no-repeat;
+}
+.second img{
+	top: 160px;
+	right: 19%;
+}
+.third{
+	background:url("../images/third.png") center no-repeat;
+}
+.third img{
+	top:100px;
+	left: 23%;
+}
+.fourth{
+	background:url("../images/fourth.jpg") center no-repeat;
+}
+.fourth img{
+	top:320px;
+	right:8%;
+}
+

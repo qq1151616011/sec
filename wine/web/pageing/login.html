@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="keywords" content="红酒,葡萄酒,进口红酒,进口葡萄酒,法国红酒,红葡萄酒,干红葡萄酒" />
+<meta name="description" content="yesmywine也买酒，中国首家进口葡萄酒、进口红酒立体销售平台，平均每分钟销售一瓶葡萄酒。一个主张葡萄酒消费应该简单、随意、休闲的新锐品牌。包含近千款法国红酒、法国葡萄酒、智利红酒、意大利红酒、德国红酒、澳大利亚红酒、西班牙红酒、新西兰红酒、阿根廷红酒、美国红酒，以及白葡萄酒、桃红酒、气泡酒、香槟、冰酒和AOC、VDP、VDT各级佳酿。" />
+<title>也买酒知名红酒商城-法国红酒,进口红酒,葡萄酒,洋酒,白酒网上专销</title>
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../style/m_login.css">
+<link rel="stylesheet" type="text/css" href="../style/m_base.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body style="background:#fff">
+<header class="header"> <a href="Personal.html" class="return"><i class="iconfont">&#xe617;</i>返回</a>
+  <p>登录</p>
+  <a href="#" class="register"> </a> </header>
+<div class="tab">
+  <ul class="tab_title">
+    <li class="active">会员登录</li>
+    <li>会员注册</li>
+  </ul>
+  <div class="tab_content">
+    <div class="tab_current asd">
+      <div class="uname">
+        <div class="name"><i class="iconfont">&#xe634;</i>
+          <input type="text" placeholder="请输入手机号/邮箱/用户名">
+        </div>
+      </div>
+      <div class="password">
+        <div class="pass"><i class="iconfont">&#xe63e;</i>
+          <input type="text" placeholder="请输入密码">
+        </div>
+      </div>
+      <div class="login">登录</div>
+      <div class="find"><a href="#">找回密码</a></div>
+      <div class="partake"> <a href="#" class="qq"><i class="iconfont">&#xe6a8;</i></a> <a href="#" class="weibo"><i class="iconfont">&#xe639;</i></a> <a href="#" class="pay"><i class="iconfont">&#xe663;</i></a> <a href="#" class="weixin"><i class="iconfont">&#xe60d;</i></a> </div>
+    </div>
+    <!--tab_current end-->
+    
+    <div class="tab_current wsx">
+      <div class="uname">
+        <div class="name"><i class="iconfont">&#xe634;</i>
+          <input type="text" placeholder="请输入手机号/邮箱/用户名">
+        </div>
+      </div>
+      <div class="password">
+        <div class="pass"><i class="iconfont">&#xe63e;</i>
+          <input type="text" placeholder="请输入密码">
+        </div>
+      </div>
+      <div class="login">登录</div>
+      <div class="find">登录即视为同意<a href="#">《联合登录授权协议》</a></div>
+      <div class="partake"> <a href="#" class="qq"><i class="iconfont">&#xe6a8;</i></a> <a href="#" class="weibo"><i class="iconfont">&#xe639;</i></a> <a href="#" class="pay"><i class="iconfont">&#xe663;</i></a> <a href="#" class="weixin"><i class="iconfont">&#xe60d;</i></a> </div>
+    </div>
+    <!--tab_current end--> 
+    
+  </div>
+  <!--tab_content end--> 
+</div>
+<!--tab end--> 
+
+<script type="text/javascript">
+	$(".tab_title li").click(function(){
+			//$(this).addClass("active").siblings().removeClass("active");
+			$(this).addClass("active").siblings().removeClass("active");
+
+			//切换内容区
+			$(".tab_current").hide();
+			$(".tab_current").eq($(this).index()).show();;
+
+		});
+</script>
+</body>
+</html>

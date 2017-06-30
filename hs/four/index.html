@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>图片翻转效果</title>
+<link rel="stylesheet" href="animate.css">
+<style>
+* { margin: 0; padding: 0;}
+ul { list-style-type: none;}
+body { font: 14px "Microsoft Yahei"; overflow-x: hidden; background-color: #2B2B2B; }
+h1 { width: 900px; margin: 40px auto 100px; font: 32px "Microsoft Yahei"; text-align: center; color: #D3D3D3; }
+
+
+
+</style>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+	var $animate = $('#animate');
+	var $opposite = $('#opposite');
+	$(".wrap").hover(function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test");
+		$opposite.addClass('test2');
+	},function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test2");
+		$opposite.addClass('test');
+	});
+
+	$(".well-item").hover(function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test");
+		$(this).find(".opposite").children().addClass('test2');
+	},function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test2");
+		$(this).find(".opposite").children().addClass('test');
+	});
+
+});
+</script>
+</head>
+
+<body>
+<h1>图片翻转效果</h1>
+<div class="well">
+	<div class="well-item">
+		<div class="correct"><img  class="" src="pro1.jpg" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						请我吃烤鱼！
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="pro2.jpg" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						请我吃火锅！
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="pro3.jpg" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						请我吃披萨
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="pro4.jpg" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content">
+					<div class="opposite-content-text">
+						请我吃牛排！
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

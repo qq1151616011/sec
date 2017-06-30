@@ -1,0 +1,16 @@
+<ion-view  view-title="详情">
+
+    <ion-content  class="padd">
+        <ion-refresher pulling-icon="ion-chevron-up" on-refresh="getData()" pulling-text="正在刷新" spinner="lines" >
+
+        </ion-refresher>
+        <h4>{{data.title}}</h4>
+        <h6>{{data.ptime}} <span>{{data.source}}</span></h6>
+        <div ng-bind-html="body"></div>
+
+
+
+
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+ <title>结算支付 - 1元云购触屏版</title>
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/payment.css">
+<link rel="shortcut icon" href="favicon.ico" >
+<script src="js/device.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+
+<!--总体开始-->
+
+<div class="m_layout">
+
+
+        <!--  顶部-->
+        <div class="nav">
+          <div class="nav1"><a href="index.html"><span></span>返回</a></div>
+         结算支付
+         
+        
+        
+        </div>
+          <!--  中部-->
+         <div class="top">
+           <div class="top_up"><span>(第124云)苹果MacBook13.3英寸笔记本电脑</span> <span><b>1</b>人次</span></div>
+             <div class="top_down">
+             
+             合计：<em>1.00</em> 元 
+             
+             
+             </div>
+         
+         
+         </div> 
+    
+    <div class="box">
+       
+     <div class="box1">
+      
+       <div class="box1_up">
+       <span>福分支付<b>￥0.00</b>(福分0)</span>
+        <big></big>
+       
+       </div>
+       <div class="box1_down">
+       
+       <span>余额支付<b>￥0.00</b>(余额￥0.00)</span>
+       <big></big>
+       </div>  
+     
+     
+     
+     
+     </div> 
+    
+    
+    <div class="box2">
+    
+    
+       <div class="box2_up" id="box_t">
+      <div class="txt"> <span>选择</span><em>京东支付</em><strong>支付</strong><b>￥1.00</b><s></s></div>
+       
+       <i class="iconfont">&#xe662;</i>
+       </div>
+       <div class="box2_down" id="box_h">
+       
+       <small></small>
+       京东支付
+       
+       </div>
+    
+    
+    </div>
+    
+    
+    
+    <button type="submit"  id="btn">确认支付</button>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+   <script>
+   
+   $("#box_t").click(function(){
+	   
+	   if($("#box_h").css("display")=="block"){
+		   $("#box_t .txt s").html("选择网银支付");
+			   $("#box_t .txt span").html(" ");
+			   $("#box_t .txt em").html(" ");
+			   $("#box_t .txt strong").html(" ");
+			   $("#box_t .txt b" ).html(" ");
+		   
+		   
+		   $("#box_h").css("display","none");
+		   $("#btn").css("background","#999");
+		   
+		   }
+		   
+		  else{
+			  
+			  
+			$("#box_h").css("display","block");  
+			
+               			
+			
+			   $("#box_t .txt span").html("选择");
+			   $("#box_t .txt em").html("京东支付");
+			   $("#box_t .txt strong").html("支付");
+			   $("#box_t .txt b" ).html("￥1.00");
+			   $("#box_t .txt s").html(" ");
+			   $("#btn").css("background","#ff6600")
+               			  
+			  } 
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   });
+   
+   
+   
+   
+   
+   
+   </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          
+          
+          
+          <!--  底部-->
+        <footer>
+        
+            <ul>
+              <li><a href="index.html">首页</a></li>
+              <li><a href="#">关于我们</a></li>
+              <li><a href="login.html">登录</a></li>
+              <li><a href="register.html">注册</a></li>
+            </ul>
+        
+              <p>
+              <a href="#" class="footer_txt">触屏版</a>
+              <a href="#" class="footer_txt">电脑版</a>
+              <a href="#" class="footer_txt">下载客户端</a>
+              </p>
+        
+        <h6>客服热线<b>4000-588-688</b>粤ICP备09215113号-1</h6>
+        
+        <h5></h5>
+        
+        
+        
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

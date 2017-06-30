@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+ <title>1元云购 - 惊喜无限</title>
+<link rel="stylesheet" type="text/css" href="style/m_base.css">
+<link rel="stylesheet" type="text/css" href="style/m_index.css">
+<link rel="shortcut icon" href="favicon.ico" >
+<script src="js/device.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+
+
+</head>
+
+<body>
+<!--header-->
+<header>
+        <a href="index.html" class="header_left"><img src="images/logo.png"></a>
+        <form action="#"  method="post">
+           <div  class="header_search"> 
+           
+           <input type="search" placeholder="请输入关键字">
+               
+             <a href="#" class="iconfont search_btn">&#xe602;</a>                  
+           </div>
+        <i class="user1 iconfont"><a href="mycart.html">&#xe606;</a></i>
+        <i class="user2 iconfont"><a href="login.html">&#xe604;</a></i>
+        </form>
+
+
+
+
+</header>
+<!--总体开始-->
+
+<div class="m_layout">
+
+<!--banner-->
+
+  <div class="banner">
+  
+  <div id="slideBox" class="slideBox">
+
+				<div class="bd">
+					<ul>
+						<li>
+							<a class="pic" href="#"><img src="images/banner1.png" /></a>
+							
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/banner2.png"/></a>
+							
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="images/banner3.png"/></a>
+							
+						</li>
+						
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true, //自动分页
+                    autoPlay:true
+				});
+			</script>
+			<!-- 本例主要代码 End ================================ -->
+
+  
+  
+  </div>
+
+<!--nav-->
+<nav>
+        <ul>
+            <li class="style_li"><a href="index.html">首页</a></li>
+            <li><a href="list.html">所有商品</a></li>
+            <li><a href="LimitBuy.html">限购专区</a></li>
+            <li><a href="#">最先揭晓</a></li>
+            <li><a href="#">晒单</a></li>
+        </ul>
+
+
+</nav>
+
+<!--最新揭晓-->
+<div class="new">
+
+   <!--最新揭晓上部-->
+   <div class="new_up">
+       <h3>最新揭晓</h3>
+       <big class="iconfont fr">&#xe601;</big> 
+   
+   
+   </div>
+   
+   <!--最新揭晓下部-->
+   <div class="new_down">
+   			<ul>
+                <li><a href="#">
+                <i><img src="images/x1.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time1"><span>00</span>:<span>00</span>:<span>00</span></div>
+                </a>
+                </li>
+               <li><a href="#">
+                  <i><img src="images/x2.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time2"><span>00</span>:<span>00</span>:<span>00</span></div>
+                </a>
+               </li>
+               <li><a href="#">
+                 <i><img src="images/x3.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time3"><span>00</span>:<span>00</span>:<span>00</span></div>
+               </a>
+               </li>
+               <li><a href="#">
+                 <i><img src="images/x4.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time4"><span>00</span>:<span>00</span>:<span>00</span></div>
+               </a>
+               </li>
+               <li><a href="#">
+                  <i><img src="images/x5.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time5"><span>00</span>:<span>00</span>:<span>00</span></div>
+               </a>
+               </li>
+               <li><a href="#">
+                  <i><img src="images/x6.jpg"></i>
+                <p>揭晓倒计时</p>
+                <div class="time" id="time6"><span>00</span>:<span>00</span>:<span>00</span></div>
+                 
+               
+               
+               </a>
+               </li>
+            </ul>
+   
+   
+   
+   
+   </div>
+   <script type="text/javascript">
+		
+
+  function showtime(s,b){
+var minute=Math.floor(s/1000/60);
+var second=Math.floor((s/1000)%60)
+var ms=Math.floor(s%100);
+
+if(minute<10){
+
+	minute="0"+minute;
+}
+if(second<10){
+
+	second="0"+second;
+}
+if(ms<10){
+
+	ms="0"+ms;
+}
+
+
+
+$(b).find("span").eq(0).html(minute);
+$(b).find("span").eq(1).html(second);
+$(b).find("span").eq(2).html(ms);
+}
+showtime(120000,"#div");
+
+function move(s,c){
+	setInterval(function(){
+	s-=7;
+	if(s<0){
+     s=120000;
+	}
+	showtime(s,c);
+},10);
+}
+
+
+move(120000,"#time1");
+move(90000,"#time2");
+move(30000,"#time3");
+move(70000,"#time4");
+move(50000,"#time5");
+move(100000,"#time6");
+
+
+	</script>
+
+
+
+</div>
+
+
+
+
+
+ <!--热门推荐-->
+<div class="hot">
+<!--热门推荐上部分-->
+<div class="hot_up">
+
+
+       <h3>热门推荐</h3>
+       <big class="iconfont fr">&#xe601;</big> 
+
+
+
+</div>
+
+<!--热门推荐下部分-->
+<div class="hot_down">
+      <ul class="clearfix">
+                <li><a href="#">
+                       <i><img src="images/x7.jpg"></i>
+                       <small>￥12399</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>9919</span>已参与</p></div>
+                            <div class="middle"><p><span>12399</span>总需人次</p></div>
+                            <div class="right"><p><span>2480</span>剩余</p></div>
+                            
+                       </div> </a>   
+                </li>
+                 <li><a href="products.html">
+                       <i><img src="images/x8.jpg"></i>
+                       <small>￥7183</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>1077</span>已参与</p></div>
+                            <div class="middle"><p><span>7130</span>总需人次</p></div>
+                            <div class="right"><p><span>6053</span>剩余</p></div>
+                            
+                       </div>  </a>  
+                </li>
+                
+                 <li><a href="#">
+                       <i><img src="images/x9.jpg"></i>
+                       <small>￥3800</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>1520</span>已参与</p></div>
+                            <div class="middle"><p><span>3800</span>总需人次</p></div>
+                            <div class="right"><p><span>2280</span>剩余</p></div>
+                            
+                       </div> </a>   
+                </li>
+                
+                 <li><a href="#">
+                       <i><img src="images/x10.jpg"></i>
+                       <small>￥277</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>91</span>已参与</p></div>
+                            <div class="middle"><p><span>277</span>总需人次</p></div>
+                            <div class="right"><p><span>186</span>剩余</p></div>
+                            
+                       </div> </a>   
+                </li>
+                
+                 <li>
+                  <a href="#">
+                       <i><img src="images/x11.jpg"></i>
+                       <small>￥5800</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>3480</span>已参与</p></div>
+                            <div class="middle"><p><span>5800</span>总需人次</p></div>
+                            <div class="right"><p><span>2320</span>剩余</p></div>
+                            
+                       </div> </a>   
+                </li>
+                
+                
+                 <li><a href="#">
+                       <i><img src="images/x5.jpg"></i>
+                       <small>￥168</small>
+                       <em><b></b></em>
+                       
+                       <div class="color">
+                       		<div class="left"><p><span>159</span>已参与</p></div>
+                            <div class="middle"><p><span>168</span>总需人次</p></div>
+                            <div class="right"><p><span>9</span>剩余</p></div>
+                            
+                       </div>
+                       </a>    
+                </li>
+                
+                
+                
+             
+            </ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<footer>
+
+    <ul>
+      <li><a href="index.html ">首页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+    </ul>
+
+      <p>
+      <a href="#" class="footer_txt">触屏版</a>
+      <a href="#" class="footer_txt">电脑版</a>
+      <a href="#" class="footer_txt">下载客户端</a>
+      </p>
+
+<h6>客服热线<b>4000-588-688</b>粤ICP备09215113号-1</h6>
+
+<h5></h5>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div id="backtop"><i class="iconfont">&#xe662;</i></div>
+
+
+
+
+<script>
+
+
+
+
+
+		$("#backtop").click(function(){
+		  $("html,body").animate({scrollTop:0}, 500);
+		
+		}); 
+		
+		
+		$(window).scroll(function(){
+    var h=$(this).scrollTop();//获得滚动条距top的高度
+    //alert(h); 
+    if(h>50){
+        $("#backtop").show();
+    }else{
+        $("#backtop").hide();
+    }
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

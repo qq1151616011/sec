@@ -1,0 +1,12 @@
+/* CSS Document */
+
+
+.left-pro{ width: 343px; height:403px; }
+.left-pro .t1{width:343px;}
+.left-pro .t2{width:343px;text-indent:0;}
+.left-pro .t2 img{text-indent:0;}
+#showArea img{cursor:pointer;width:38px;border:1px solid #e4e4e4;height:38px;float:left;margin-right:10px;}
+#showArea img:hover{border:1px solid #ff6600;}
+#main_img{cursor:pointer;display:block}
+
+#showArea{height:41px;margin-top:20px; }

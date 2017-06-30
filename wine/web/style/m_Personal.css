@@ -1,0 +1,45 @@
+/* CSS Document */
+
+header{ width:100%; height:1.76rem; background:rgba(186,15,47,1); position:fixed; z-index:100; top:0;}
+header .p_txt{color:#fff; font-size:1rem; line-height:1.76rem; text-align:center; margin-left:1rem}
+header .p_txt ._login{ font-size:0.7rem; float:right; font-weight:normal; margin-right:1rem; color:#fff;}
+
+
+.integral{ width:100%; display:block; background:#fff; margin-top:1.76rem; border-bottom:1px solid #dcdcdc; padding:0.8rem 0.3rem}
+
+.integral li{ width:33.3%; float:left; text-align:center;border-right: 1px dotted #CCCCCC;}
+.integral li:last-child{ border-right:0 none;}
+
+.integral li p.int{color: #ff6600; font-size:1.2rem}
+.integral li p{ color:#666;}
+
+.account{ height:auto;display:block; margin:0 auto;overflow: hidden;background: #e5e5e5;
+padding-top: 0.56rem;}
+.account .menu{ display:block; width:95%; margin:0 auto}
+.account .menu a{ width:25%; height:auto; padding:0 0.2rem 0.5rem 0; float:left; color:#333; text-align:center}
+  .account .menu a em{ width:3rem; height:3rem;display:block;box-shadow: 0 0 2px rgba(0,0,0,0.3);border: 1px solid #fff; margin-left:0.2rem;background:url(../images/icon-btn-hd.jpg) 0 0 no-repeat #f5f5f5;background-size:3rem;} 
+.account .menu a.menu-b em{background-position: 0 -3rem;}
+.account .menu a.menu-c em{background-position: 0 -6rem;}
+.account .menu a.menu-d em{background-position: 0 -9rem;}
+.account .menu a.menu-e em{background-position: 0 -12rem;}
+.account .menu a.menu-f em{background-position: 0 -15rem;}
+.account .menu a.menu-g em{background-position: 0 -18rem;}
+.account .menu a.menu-h em{background-position: 0 -21rem;}
+.account .menu a.menu-i em{background-position: 0 -24rem;}
+.account .menu a.menu-j em{background-position: 0 -27rem;}
+.account .menu a.menu-k em{background-position: 0 -30rem;}
+.account .menu a.menu-l em{background-position: 0 -33rem;}
+
+
+.bot_nav{ width:100%; height:1.8rem;background: -webkit-linear-gradient(top,#f4f4f4,#e3e3e3); position:fixed; z-index:100; bottom:0;}
+.bot_nav li{ width:20%;float:left; height:1.8rem; position:relative;}
+.bot_nav li ._icon{position:absolute; top:0.2rem; left:50%; width:0.9rem; height:0.9rem; display:block; margin-left:-0.45rem}
+.bot_nav li .btn_text{ display:block; padding-top:1.1rem; text-align:center; coolor:#333; font-size:0.5rem}
+
+
+.bot_nav li .icon-1{background:url(../images/icon-1-1.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-2{background:url(../images/icon-2.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-3{background:url(../images/icon-3.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-4{background:url(../images/icon-4.png) no-repeat; background-size:0.9rem}
+.bot_nav li .icon-5{background:url(../images/icon-5-1.png) no-repeat; background-size:0.9rem}
+

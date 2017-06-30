@@ -1,0 +1,117 @@
+.register{
+    width:100%;
+    height:742px;
+    background:#f8f9fb;
+    margin-top:25px;
+ border-top:1px solid #ddd;
+    padding:64px 398px 0px;
+
+}
+.register .register_m{
+    width: 100%;
+    height: 605px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #fff;
+
+}
+.register .register_m .register_m_u{
+    width: 100%;
+    height: 548px;
+    padding: 30px 19px 0px;
+}
+.register .register_m .register_m_u h4{
+
+    margin: 0px 0px 33px 0px;
+    font-weight: 600;
+}
+.register .register_m .register_m_u .r_txt{
+
+    width: 100%;
+    height:20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.register .register_m .register_m_u i{
+    width: 138px;
+    height: 1px;
+    background: #333;
+    display: inline-block;
+    position: relative;
+   top:-3px;
+}
+.register .register_m .register_m_u span{
+    display: inline-block;
+    margin: 0px 4px;
+}
+
+.register .register_m .register_m_u .th3{
+        width: 100%;
+        height:54px;
+    padding: 7px 102px 0px 110px;
+
+}
+
+.register .register_m .register_m_u .th3 .th3r{
+    width: 38px;
+    height: 38px;
+    margin:0px 5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px #333 solid;
+    float: left;
+
+
+
+}
+.register .register_m .register_m_u .th3 .th3r img{
+    position: relative;
+    top:7px;
+    left:5px;
+}
+.register .register_m .register_m_u .th3 .th3r:nth-child(1){
+    border: 1px solid #91e492;
+}
+.register .register_m .register_m_u .th3 .th3r:nth-child(2){
+    border: 1px solid #b4d2ee;
+}
+.register .register_m .register_m_u .th3 .th3r:nth-child(3){
+    border: 1px solid #f0a29e;
+}
+
+
+
+
+
+
+.register .register_m .register_m_d{
+    width: 100%;
+    height:55px;
+    background:#f7f7f9;
+    border-top:1px solid #ddd;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 55px;
+
+
+}
+form .form-group{
+    height:78px;
+    margin: 0px;
+}
+form .form-group input{
+    display: block;
+    margin-bottom: 11px;
+    height: 40px;
+
+}
+form a{text-decoration: none;
+     color:#aaa;
+}
+
+
+form .checkbox input{
+    width: 15px;
+    height: 15px;
+}
